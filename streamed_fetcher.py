@@ -2,6 +2,7 @@
 
 from curl_cffi import requests
 import json
+import re
 import os
 from datetime import datetime
 
@@ -12,30 +13,52 @@ OUTPUT_FILE = 'streamed.m3u'
 
 class StreamFetcher:
     def __init__(self):
-        # chrome120 impersonation is key to bypassing the TLS block
+        # Impersonate Chrome to bypass security on both API and Embed pages
         self.session = requests.Session(impersonate="chrome120")
         self.session.headers.update({
-            'Accept': 'application/json',
             'Referer': 'https://streamed.su/',
             'Origin': 'https://streamed.su'
         })
 
-    def get_playable_link(self, provider, stream_id):
-        """Fetches the stream array and extracts the embed URL."""
-        url = f"{STREAM_API_BASE}/{provider}/{stream_id}"
+    def scrape_direct_link(self, embed_url):
+        """Visits the embed page and scrapes the underlying .m3u8 or source link."""
         try:
-            resp = self.session.get(f"{url}?t={int(datetime.now().timestamp())}", timeout=15)
+            # Visit the HTML embed page
+            resp = self.session.get(embed_url, timeout=15)
             if resp.status_code == 200:
-                streams = resp.json() 
+                html = resp.text
+                
+                # Look for common stream patterns (m3u8, mp4, etc.) in the Javascript
+                # This finds links like: "https://.../index.m3u8"
+                found_links = re.findall(r'(https?://[^\s"\']+\.m3u8[^\s"\']*)', html)
+                
+                if found_links:
+                    # Return the first high-quality stream link found
+                    return found_links[0].replace('\\/', '/')
+        except Exception as e:
+            print(f"      Scrape Error: {e}")
+        return None
+
+    def get_resolved_url(self, provider, stream_id):
+        """Resolves match ID into an Embed URL, then scrapes it for a direct link."""
+        api_url = f"{STREAM_API_BASE}/{provider}/{stream_id}"
+        try:
+            resp = self.session.get(f"{api_url}?t={int(datetime.now().timestamp())}", timeout=10)
+            if resp.status_code == 200:
+                streams = resp.json()
                 if isinstance(streams, list) and len(streams) > 0:
-                    # Taking the first stream object from the array
-                    return streams[0].get('embedUrl')
+                    embed_url = streams[0].get('embedUrl')
+                    
+                    if embed_url:
+                        print(f"      Found Embed: {embed_url}")
+                        # Now we go deeper to find the actual video file for TiviMate
+                        return self.scrape_direct_link(embed_url)
         except Exception:
             pass
         return None
 
     def generate_m3u(self):
-        print(f"Reading live data from repository...")
+        print(f"Starting deep-link resolution for TiviMate...")
         try:
             response = self.session.get(f"{RAW_JSON_URL}?t={int(datetime.now().timestamp())}")
             response.raise_for_status()
@@ -49,10 +72,7 @@ class StreamFetcher:
 
         for match in matches:
             title = match.get('title', 'Live Event')
-            # Categorization for TiviMate Groups
             category = match.get('category', 'Sports').replace('-', ' ').title()
-            
-            # Ensure the poster URL is absolute
             poster = match.get('poster', '')
             if poster.startswith('/'):
                 poster = f"https://streamed.su{poster}"
@@ -62,19 +82,18 @@ class StreamFetcher:
                 sid = source.get('id')
                 
                 print(f"Resolving: {title} ({provider.upper()})...")
-                link = self.get_playable_link(provider, sid)
+                direct_video_link = self.get_resolved_url(provider, sid)
                 
-                if link:
-                    # Final M3U structure with Group-Title and Logo
+                if direct_video_link:
                     m3u_content.append(f'#EXTINF:-1 tvg-logo="{poster}" group-title="{category}",{title} ({provider.upper()})')
-                    m3u_content.append(link)
+                    m3u_content.append(direct_video_link)
                     count += 1
                     break 
 
         with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
             f.write('\n'.join(m3u_content))
         
-        print(f"✅ Success: Generated {OUTPUT_FILE} with {count} channels across sports groups.")
+        print(f"✅ Success: Generated {OUTPUT_FILE} with {count} playable video links.")
 
 if __name__ == "__main__":
     fetcher = StreamFetcher()
