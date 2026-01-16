@@ -1,4 +1,4 @@
-name: Update M3U Playlist
+name: ▶️ Update streamed.m3u
 
 on:
   schedule:
@@ -34,5 +34,5 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add streamed.m3u
-          git commit -m "📺 Update playlist: $(date -u)" || echo "No changes to commit"
+          git commit -m "📺 Update streamedsu: $(date -u)" || echo "No changes to commit"
           git push
