@@ -1,4 +1,4 @@
-name: 🔁 Update RoxieStreams Playlist 🎥
+name: ▶️ Update RoxieStreams
 
 on:
   schedule:
@@ -46,7 +46,7 @@ jobs:
             exit 0
           fi
 
-          git commit -m "📺 Auto-update RoxieStreams playlist ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+          git commit -m "📺 RoxieStreams Updated ($(date -u +'%Y-%m-%d %H:%M UTC'))"
 
           # Random delay to reduce push collisions
           sleep $((RANDOM % 10 + 5))
