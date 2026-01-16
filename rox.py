@@ -22,7 +22,7 @@ TV_INFO = {
     "mlb": ("MLB.Baseball.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/baseball.png?raw=true")
 }
 
-DEFAULT_LOGO = "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/ppv2.png?raw=true"
+DEFAULT_LOGO = "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/default.png?raw=true"
 DISCOVERY_KEYWORDS = list(TV_INFO.keys()) + ['streams']
 SECTION_BLOCKLIST = ['olympia']
 
