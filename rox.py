@@ -6,7 +6,6 @@ from requests.exceptions import RequestException
 import logging
 
 BASE_URL = "https://roxiestreams.live"
-# Your specific EPG URL integrated into the script
 EPG_URL = "https://epgshare01.online/epgshare01/epg_ripper_DUMMY_CHANNELS.xml.gz"
 
 TV_INFO = {
@@ -62,8 +61,8 @@ def discover_sections(base_url):
                 if abs_url not in discovered_urls:
                     discovered_urls.add(abs_url)
                     sections_found.append((abs_url, title))
-    except RequestException as e:
-        logging.error(f"Failed discovery: {e}")
+    except Exception as e:
+        logging.error(f"Discovery error: {e}")
     return sections_found
 
 def discover_event_links(section_url):
@@ -103,10 +102,13 @@ def check_stream_status(m3u8_url):
         return False
 
 def main():
-    # Header updated with x-tvg-url
     playlist_lines = [f'#EXTM3U x-tvg-url="{EPG_URL}"']
     sections = discover_sections(BASE_URL)
     
+    seen_links = set()
+    # NEW: Counter for mirrors
+    title_tracker = {}
+
     for section_url, section_title in sections:
         event_links = discover_event_links(section_url)
         pages = event_links if event_links else {(section_url, section_title)}
@@ -114,14 +116,26 @@ def main():
         for event_url, event_title in pages:
             tv_id, logo = get_tv_info(event_url, event_title)
             m3u8_links = extract_m3u8_links(event_url)
+            
             for link in m3u8_links:
+                if link in seen_links:
+                    continue
+                
                 if check_stream_status(link):
-                    playlist_lines.append(f'#EXTINF:-1 tvg-id="{tv_id}" tvg-logo="{logo}" group-title="Roxiestreams",{event_title}')
+                    # LOGIC: Increment count for this title
+                    title_tracker[event_title] = title_tracker.get(event_title, 0) + 1
+                    count = title_tracker[event_title]
+                    
+                    # NAME: Format based on mirror count
+                    display_name = event_title if count == 1 else f"{event_title} (Mirror {count-1})"
+                    
+                    playlist_lines.append(f'#EXTINF:-1 tvg-id="{tv_id}" tvg-logo="{logo}" group-title="Roxiestreams",{display_name}')
                     playlist_lines.append(link)
+                    seen_links.add(link)
 
     with open("Roxiestreams.m3u", "w", encoding="utf-8") as f:
         f.write("\n".join(playlist_lines))
-    logging.info("Playlist updated with EPG and Logos.")
+    logging.info("Playlist updated with mirrors identified.")
 
 if __name__ == "__main__":
     main()
