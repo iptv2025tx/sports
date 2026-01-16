@@ -5,83 +5,81 @@ import os
 from datetime import datetime, timezone
 
 # Configuration
-# Note: Streamed.su is the current primary domain for this service
-BASE_URL = "https://streamed.su/api/matches/all"
-STREAM_API = "https://streamed.su/api/stream"
+# Streamed.su is the most stable domain for their live API in 2026
+LIVE_API_URL = "https://streamed.su/api/matches/live"
+STREAM_API_BASE = "https://streamed.su/api/stream"
 OUTPUT_FILE = 'streamed.m3u'
 
 class StreamFetcher:
     def __init__(self):
         self.session = requests.Session()
-        # Mimicking an iPhone/Safari browser often bypasses basic bot checks
+        # High-authority headers to mimic a browser and bypass bot detection
         self.session.headers.update({
-            'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1',
-            'Accept': 'application/json',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Accept': 'application/json, text/plain, */*',
             'Origin': 'https://streamed.su',
-            'Referer': 'https://streamed.su/'
+            'Referer': 'https://streamed.su/watch',
+            'Sec-Fetch-Mode': 'cors',
+            'Sec-Fetch-Site': 'same-origin'
         })
 
-    def get_live_link(self, source_type, source_id):
-        """Resolves the JSON to a direct video link."""
+    def get_resolved_url(self, provider, stream_id):
+        """Resolves the internal ID into a direct, playable m3u8 stream link."""
         try:
-            url = f"{STREAM_API}/{source_type}/{source_id}"
+            url = f"{STREAM_API_BASE}/{provider}/{stream_id}"
             resp = self.session.get(url, timeout=10)
             if resp.status_code == 200:
                 data = resp.json()
+                # The API usually returns a list of source objects or a direct 'url' key
                 if isinstance(data, list) and len(data) > 0:
-                    return data[0].get('url')
-                return data.get('url')
-        except:
-            pass
+                    return data[0].get('url') or data[0].get('link')
+                return data.get('url') or data.get('link')
+        except Exception as e:
+            print(f"Error resolving stream {stream_id}: {e}")
         return None
 
     def generate_m3u(self):
-        print("Fetching currently LIVE matches...")
+        print(f"Polling LIVE matches from: {LIVE_API_URL}")
         try:
-            # We add a cache-buster timestamp to avoid getting 'old' cached empty data
-            response = self.session.get(f"{BASE_URL}?t={int(datetime.now().timestamp())}", timeout=20)
+            # Cache buster helps ensure GitHub doesn't serve an old version of the API response
+            response = self.session.get(f"{LIVE_API_URL}?t={int(datetime.now().timestamp())}", timeout=20)
             response.raise_for_status()
-            matches = response.json()
+            live_matches = response.json()
         except Exception as e:
-            print(f"Connection failed: {e}")
+            print(f"Failed to fetch live data: {e}")
             return
 
         m3u_content = ["#EXTM3U", ""]
-        live_count = 0
-        now = datetime.now(timezone.utc)
+        channel_count = 0
 
-        for match in matches:
-            # Skip if match has no date (invalid)
-            if not match.get('date'):
-                continue
+        for match in live_matches:
+            title = match.get('title', 'Live Event')
+            # Categorize by sport
+            category = match.get('category', 'Sports').replace('-', ' ').title()
+            poster = f"https://streamed.su{match.get('poster', '')}"
+
+            for source in match.get('sources', []):
+                provider = source.get('source')
+                stream_id = source.get('id')
                 
-            event_time = datetime.fromtimestamp(match['date'] / 1000, tz=timezone.utc)
-            
-            # STRICT "LIVE NOW" FILTER:
-            # Match must have started already (within last 4 hours) 
-            # OR is starting in the next 5 minutes.
-            hours_diff = (event_time - now).total_seconds() / 3600
-            
-            if -4 <= hours_diff <= 0.08: # 0.08 hours is approx 5 minutes
-                category = match.get('category', 'Live').title()
-                poster = f"https://streamed.su{match.get('poster', '')}"
+                if not provider or not stream_id: continue
+
+                # Important: This step gets the actual .m3u8 link TiviMate needs
+                playable_url = self.get_resolved_url(provider, stream_id)
                 
-                for source in match.get('sources', []):
-                    s_type = source.get('source')
-                    s_id = source.get('id')
-                    
-                    real_url = self.get_live_link(s_type, s_id)
-                    if real_url:
-                        display_name = f"LIVE: {match['title']} ({s_type.upper()})"
-                        m3u_content.append(f'#EXTINF:-1 tvg-logo="{poster}" group-title="{category}",{display_name}')
-                        m3u_content.append(real_url)
-                        live_count += 1
-                        break # Only take the first working source per match
+                if playable_url:
+                    # Clean title for TiviMate display
+                    display_name = f"{title} [{provider.upper()}]"
+                    m3u_content.append(f'#EXTINF:-1 tvg-logo="{poster}" group-title="{category}",{display_name}')
+                    m3u_content.append(playable_url)
+                    channel_count += 1
+                    # Only one working link per match to prevent duplicates
+                    break
 
         with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
             f.write('\n'.join(m3u_content))
         
-        print(f"✅ Success: Generated {OUTPUT_FILE} with {live_count} currently LIVE matches.")
+        print(f"✅ Success: Generated {OUTPUT_FILE} with {channel_count} live channels.")
 
 if __name__ == "__main__":
     fetcher = StreamFetcher()
