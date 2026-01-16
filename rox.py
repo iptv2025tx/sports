@@ -6,11 +6,13 @@ from requests.exceptions import RequestException
 import logging
 
 BASE_URL = "https://roxiestreams.live"
+# Your specific EPG URL integrated into the script
+EPG_URL = "https://epgshare01.online/epgshare01/epg_ripper_DUMMY_CHANNELS.xml.gz"
 
 TV_INFO = {
     "ppv": ("PPV.EVENTS.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/ppv2.png?raw=true"),
     "soccer": ("Soccer.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/football.png?raw=true"),
-    "ufc": ("UFC.Fight.Pass.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/mma.png"),
+    "ufc": ("UFC.Fight.Pass.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/mma.png?raw=true"),
     "fighting": ("PPV.EVENTS.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/boxing.png?raw=true"),
     "nfl": ("Football.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/nfl.png?raw=true"),
     "f1": ("Racing.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/f1.png?raw=true"),
@@ -20,6 +22,7 @@ TV_INFO = {
     "mlb": ("MLB.Baseball.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/baseball.png?raw=true")
 }
 
+DEFAULT_LOGO = "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/ppv2.png?raw=true"
 DISCOVERY_KEYWORDS = list(TV_INFO.keys()) + ['streams']
 SECTION_BLOCKLIST = ['olympia']
 
@@ -30,179 +33,95 @@ SESSION.headers.update({
 })
 
 M3U8_REGEX = re.compile(r'https?://[^\s"\'<>`]+\.m3u8')
-
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
+def get_tv_info(url, title=""):
+    combined_text = (url + title).lower()
+    for key, value in TV_INFO.items():
+        if key in combined_text:
+            return value
+    return ("Sports.Rox.us", DEFAULT_LOGO)
 
 def discover_sections(base_url):
-    """
-    Step 1: Scrapes the base_url to find main category links (e.g., /nba, /ufc).
-    """
-    logging.info(f"Discovering sections on {base_url}...")
     sections_found = []
     try:
         resp = SESSION.get(base_url, timeout=10)
         resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, 'html.parser')
+        discovered_urls = set()
+        for a_tag in soup.find_all('a', href=True):
+            href = a_tag['href']
+            title = a_tag.get_text(strip=True)
+            if not href or href.startswith(('#', 'javascript:', 'mailto:')) or not title:
+                continue
+            abs_url = urljoin(base_url, href)
+            if any(blocked in abs_url.lower() for blocked in SECTION_BLOCKLIST):
+                continue
+            if (urlparse(abs_url).netloc == urlparse(base_url).netloc and
+                    any(keyword in abs_url.lower() for keyword in DISCOVERY_KEYWORDS)):
+                if abs_url not in discovered_urls:
+                    discovered_urls.add(abs_url)
+                    sections_found.append((abs_url, title))
     except RequestException as e:
-        logging.error(f"Failed to fetch base URL {base_url}: {e}")
-        return []
-
-    soup = BeautifulSoup(resp.text, 'html.parser')
-    discovered_urls = set()
-
-    for a_tag in soup.find_all('a', href=True):
-        href = a_tag['href']
-        title = a_tag.get_text(strip=True)
-
-        if not href or href.startswith(('#', 'javascript:', 'mailto:')) or not title:
-            continue
-
-        abs_url = urljoin(base_url, href)
-
-        if any(blocked in abs_url.lower() for blocked in SECTION_BLOCKLIST):
-            pass
-        elif (urlparse(abs_url).netloc == urlparse(base_url).netloc and
-                any(keyword in abs_url.lower() for keyword in DISCOVERY_KEYWORDS) and
-                abs_url not in discovered_urls):
-
-            discovered_urls.add(abs_url)
-            logging.info(f"  [Found] {title} -> {abs_url}")
-            sections_found.append((abs_url, title))
-
+        logging.error(f"Failed discovery: {e}")
     return sections_found
 
 def discover_event_links(section_url):
-    """
-    Step 2: Visits an index page (like /nba) and finds all links
-    to actual event pages (like /nba-streams-1).
-    Returns a set of tuples: (event_url, event_title)
-    """
     events = set()
     try:
         resp = SESSION.get(section_url, timeout=10)
         resp.raise_for_status()
-    except RequestException as e:
-        logging.warning(f"  Failed to fetch section page {section_url}: {e}")
-        return events
-
-    soup = BeautifulSoup(resp.text, 'html.parser')
-
-    event_table = soup.find('table', id='eventsTable') 
-
-    if not event_table:
-        return events 
-
-    for a_tag in event_table.find_all('a', href=True):
-        href = a_tag['href']
-        title = a_tag.get_text(strip=True)
-        if not href or not title:
-            continue
-
-        abs_url = urljoin(section_url, href)
-
-        if abs_url.startswith(BASE_URL):
-            events.add((abs_url, title))
-
+        soup = BeautifulSoup(resp.text, 'html.parser')
+        event_table = soup.find('table', id='eventsTable') 
+        if event_table:
+            for a_tag in event_table.find_all('a', href=True):
+                href = a_tag['href']
+                title = a_tag.get_text(strip=True)
+                if href and title:
+                    abs_url = urljoin(section_url, href)
+                    if abs_url.startswith(BASE_URL):
+                        events.add((abs_url, title))
+    except Exception:
+        pass
     return events
 
 def extract_m3u8_links(page_url):
-    """
-    Step 3: Visits an event page and extracts all .m3u8 links from the raw HTML.
-    """
     links = set()
     try:
         resp = SESSION.get(page_url, timeout=10)
         resp.raise_for_status()
         links.update(M3U8_REGEX.findall(resp.text))
-    except RequestException as e:
-        logging.warning(f"    Failed to fetch event page {page_url}: {e}")
-
+    except Exception:
+        pass
     return links
 
 def check_stream_status(m3u8_url):
-    """
-    Step 4: Validates a .m3u8 link with a HEAD request.
-    """
     try:
         resp = SESSION.head(m3u8_url, timeout=5, allow_redirects=True)
-        if resp.status_code == 200:
-            return True
-        else:
-            logging.warning(f"    [BAD STATUS {resp.status_code}] {m3u8_url}")
-            return False
-    except RequestException:
-        logging.info(f"    [DEAD LINK] {m3u8_url}")
+        return resp.status_code == 200
+    except Exception:
         return False
 
-def get_tv_info(url):
-    """Matches a URL against the TV_INFO dict to get logo and ID."""
-    for key, value in TV_INFO.items():
-        if key in url.lower():
-            return value
-    return ("Unknown.Dummy.us", "")
-
-
 def main():
-    playlist_lines = ["#EXTM3U"]
-
-    sections = list(discover_sections(BASE_URL))
-    if not sections:
-        logging.error("No sections discovered.")
-        return
-
-    logging.info(f"Found {len(sections)} sections. Scraping for events...")
-
+    # Header updated with x-tvg-url
+    playlist_lines = [f'#EXTM3U x-tvg-url="{EPG_URL}"']
+    sections = discover_sections(BASE_URL)
+    
     for section_url, section_title in sections:
-        logging.info(f"\n--- Processing Section: {section_title} ({section_url}) ---")
-
-        tv_id, logo = get_tv_info(section_url)
-
         event_links = discover_event_links(section_url)
+        pages = event_links if event_links else {(section_url, section_title)}
 
-        pages_to_scrape = set()
-
-        if event_links:
-            logging.info(f"  Found {len(event_links)} event sub-pages.")
-            pages_to_scrape.update(event_links)
-        else:
-            logging.info(f"  No sub-pages found. Scraping as a direct event page.")
-            pages_to_scrape.add((section_url, section_title))
-
-        if not pages_to_scrape:
-            logging.info("  No event pages to scrape for this section.")
-            continue
-
-        valid_count_for_section = 0
-
-        for event_url, event_title in pages_to_scrape:
-            logging.info(f"  Scraping: {event_title} ({event_url})")
+        for event_url, event_title in pages:
+            tv_id, logo = get_tv_info(event_url, event_title)
             m3u8_links = extract_m3u8_links(event_url)
-
-            if not m3u8_links:
-                logging.info(f"    No links found for {event_title}.")
-                continue
-
-            logging.info(f"    Found {len(m3u8_links)} potential links. Validating...")
-
             for link in m3u8_links:
                 if check_stream_status(link):
-                    logging.info(f"    [OK] {link}")
-
-                    playlist_lines.append(f'#EXTINF:-1 tvg-logo="{logo}" tvg-id="{tv_id}" group-title="Roxiestreams",Roxiestreams - {event_title}')
+                    playlist_lines.append(f'#EXTINF:-1 tvg-id="{tv_id}" tvg-logo="{logo}" group-title="Roxiestreams",{event_title}')
                     playlist_lines.append(link)
-                    valid_count_for_section += 1
 
-        logging.info(f"  Added {valid_count_for_section} valid streams for {section_title} section.")
-
-    output_filename = "Roxiestreams.m3u"
-    try:
-        with open(output_filename, "w", encoding="utf-8") as f:
-            f.write("\n".join(playlist_lines))
-        logging.info(f"\n--- SUCCESS ---")
-        logging.info(f"Playlist saved as {output_filename}")
-        logging.info(f"Total valid streams found: {(len(playlist_lines) - 1) // 2}")
-    except IOError as e:
-        logging.error(f"Failed to write file {output_filename}: {e}")
+    with open("Roxiestreams.m3u", "w", encoding="utf-8") as f:
+        f.write("\n".join(playlist_lines))
+    logging.info("Playlist updated with EPG and Logos.")
 
 if __name__ == "__main__":
     main()
