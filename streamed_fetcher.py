@@ -3,24 +3,44 @@
 import requests
 import json
 import os
+from datetime import datetime
 
 # Configuration
-INPUT_FILE = 'live.json'
+LIVE_API_URL = "https://streamed.su/api/matches/live"
 STREAM_API_BASE = "https://streamed.su/api/stream"
+JSON_FILE = 'live.json'
 OUTPUT_FILE = 'streamed.m3u'
 
 class StreamFetcher:
     def __init__(self):
         self.session = requests.Session()
+        # Using Mobile Safari headers often bypasses data-center blocks
         self.session.headers.update({
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Mobile/15E148 Safari/604.1',
             'Accept': 'application/json',
-            'Origin': 'https://streamed.su',
-            'Referer': 'https://streamed.su/watch'
+            'Referer': 'https://streamed.su/',
+            'Origin': 'https://streamed.su'
         })
 
+    def fetch_and_save_json(self):
+        """Fetches the live JSON from the API and saves it to the repo."""
+        print(f"Fetching live data from {LIVE_API_URL}...")
+        try:
+            # t= timestamp prevents GitHub from receiving a cached empty response
+            response = self.session.get(f"{LIVE_API_URL}?t={int(datetime.now().timestamp())}", timeout=20)
+            response.raise_for_status()
+            data = response.json()
+            
+            with open(JSON_FILE, 'w', encoding='utf-8') as f:
+                json.dump(data, f, indent=4)
+            print(f"✅ Saved raw data to {JSON_FILE}")
+            return data
+        except Exception as e:
+            print(f"❌ Failed to fetch JSON: {e}")
+            return None
+
     def get_resolved_url(self, provider, stream_id):
-        """Resolves the source ID into a playable .m3u8 link."""
+        """Resolves the ID into a playable .m3u8 link."""
         try:
             url = f"{STREAM_API_BASE}/{provider}/{stream_id}"
             resp = self.session.get(url, timeout=10)
@@ -36,16 +56,8 @@ class StreamFetcher:
         return None
 
     def generate_m3u(self):
-        if not os.path.exists(INPUT_FILE):
-            print(f"❌ Error: {INPUT_FILE} not found in repository. Please upload it.")
-            return
-
-        print(f"Processing matches from {INPUT_FILE}...")
-        try:
-            with open(INPUT_FILE, 'r', encoding='utf-8') as f:
-                matches = json.load(f)
-        except Exception as e:
-            print(f"❌ Error reading JSON: {e}")
+        matches = self.fetch_and_save_json()
+        if not matches:
             return
 
         m3u_content = ["#EXTM3U", ""]
@@ -53,17 +65,16 @@ class StreamFetcher:
 
         for match in matches:
             title = match.get('title', 'Live Event')
-            category = match.get('category', 'Sports').title()
+            category = match.get('category', 'Sports').replace('-', ' ').title()
             poster = f"https://streamed.su{match.get('poster', '')}"
 
             for source in match.get('sources', []):
                 provider = source.get('source')
                 sid = source.get('id')
                 
-                print(f"Resolving: {title}...")
                 real_link = self.get_resolved_url(provider, sid)
-                
                 if real_link:
+                    # Added group-title for TiviMate groups
                     m3u_content.append(f'#EXTINF:-1 tvg-logo="{poster}" group-title="{category}",{title} ({provider.upper()})')
                     m3u_content.append(real_link)
                     count += 1
@@ -72,7 +83,7 @@ class StreamFetcher:
         with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
             f.write('\n'.join(m3u_content))
         
-        print(f"✅ Success: Created {OUTPUT_FILE} with {count} active channels.")
+        print(f"✅ Success: Generated {OUTPUT_FILE} with {count} active channels.")
 
 if __name__ == "__main__":
     fetcher = StreamFetcher()
