@@ -8,12 +8,15 @@ import logging
 BASE_URL = "https://roxiestreams.live"
 EPG_URL = "https://epgshare01.online/epgshare01/epg_ripper_DUMMY_CHANNELS.xml.gz"
 
+# Mapping for Logos and EPG IDs based on the categories you identified
 TV_INFO = {
     "ppv": ("PPV.EVENTS.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/ppv2.png?raw=true"),
     "soccer": ("Soccer.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/football.png?raw=true"),
     "ufc": ("UFC.Fight.Pass.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/mma.png?raw=true"),
-    "fighting": ("PPV.EVENTS.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/boxing.png?raw=true"),
+    "fighting": ("Combat.Sports.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/boxing.png?raw=true"),
     "nfl": ("Football.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/nfl.png?raw=true"),
+    "nhl": ("NHL.Hockey.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/nhl.png?raw=true"),
+    "hockey": ("NHL.Hockey.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/nhl.png?raw=true"),
     "f1": ("Racing.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/f1.png?raw=true"),
     "motorsports": ("Racing.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/f1.png?raw=true"),
     "wwe": ("PPV.EVENTS.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/wwe.png?raw=true"),
@@ -35,6 +38,7 @@ M3U8_REGEX = re.compile(r'https?://[^\s"\'<>`]+\.m3u8')
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def get_tv_info(url, title=""):
+    """Determines logo and EPG ID by checking both URL and Event Title."""
     combined_text = (url + title).lower()
     for key, value in TV_INFO.items():
         if key in combined_text:
@@ -42,6 +46,7 @@ def get_tv_info(url, title=""):
     return ("Sports.Rox.us", DEFAULT_LOGO)
 
 def discover_sections(base_url):
+    """Finds top-level categories like /nba, /nhl, etc."""
     sections_found = []
     try:
         resp = SESSION.get(base_url, timeout=10)
@@ -66,6 +71,7 @@ def discover_sections(base_url):
     return sections_found
 
 def discover_event_links(section_url):
+    """Finds individual event pages within a section."""
     events = set()
     try:
         resp = SESSION.get(section_url, timeout=10)
@@ -85,6 +91,7 @@ def discover_event_links(section_url):
     return events
 
 def extract_m3u8_links(page_url):
+    """Scrapes raw HTML for .m3u8 links."""
     links = set()
     try:
         resp = SESSION.get(page_url, timeout=10)
@@ -95,6 +102,7 @@ def extract_m3u8_links(page_url):
     return links
 
 def check_stream_status(m3u8_url):
+    """Verifies link is active."""
     try:
         resp = SESSION.head(m3u8_url, timeout=5, allow_redirects=True)
         return resp.status_code == 200
@@ -106,11 +114,11 @@ def main():
     sections = discover_sections(BASE_URL)
     
     seen_links = set()
-    # NEW: Counter for mirrors
     title_tracker = {}
 
     for section_url, section_title in sections:
         event_links = discover_event_links(section_url)
+        # If no sub-links, scrape the section page itself
         pages = event_links if event_links else {(section_url, section_title)}
 
         for event_url, event_title in pages:
@@ -122,11 +130,10 @@ def main():
                     continue
                 
                 if check_stream_status(link):
-                    # LOGIC: Increment count for this title
+                    # Logic to identify and label mirrors
                     title_tracker[event_title] = title_tracker.get(event_title, 0) + 1
                     count = title_tracker[event_title]
                     
-                    # NAME: Format based on mirror count
                     display_name = event_title if count == 1 else f"{event_title} (Mirror {count-1})"
                     
                     playlist_lines.append(f'#EXTINF:-1 tvg-id="{tv_id}" tvg-logo="{logo}" group-title="Roxiestreams",{display_name}')
@@ -135,7 +142,7 @@ def main():
 
     with open("Roxiestreams.m3u", "w", encoding="utf-8") as f:
         f.write("\n".join(playlist_lines))
-    logging.info("Playlist updated with mirrors identified.")
+    logging.info(f"Playlist updated. Found {len(seen_links)} unique streams.")
 
 if __name__ == "__main__":
     main()
