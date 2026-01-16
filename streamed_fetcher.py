@@ -1,83 +1,87 @@
 #!/usr/bin/env python3
 
 import requests
-import re
 import os
 from datetime import datetime, timezone
 
 # Configuration
-SOURCE_URL = "https://streamed.pk/"
-STREAM_API_BASE = "https://streamed.pk/api/stream"
+# Note: Streamed.su is the current primary domain for this service
+BASE_URL = "https://streamed.su/api/matches/all"
+STREAM_API = "https://streamed.su/api/stream"
 OUTPUT_FILE = 'streamed.m3u'
 
 class StreamFetcher:
     def __init__(self):
         self.session = requests.Session()
-        # Using a very high-quality Browser User-Agent
+        # Mimicking an iPhone/Safari browser often bypasses basic bot checks
         self.session.headers.update({
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
-            'Referer': 'https://google.com',
-            'Accept-Language': 'en-US,en;q=0.5'
+            'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1',
+            'Accept': 'application/json',
+            'Origin': 'https://streamed.su',
+            'Referer': 'https://streamed.su/'
         })
 
-    def get_real_m3u8(self, source_type, source_id):
-        """Attempts to resolve the actual video file link."""
+    def get_live_link(self, source_type, source_id):
+        """Resolves the JSON to a direct video link."""
         try:
-            url = f"{STREAM_API_BASE}/{source_type}/{source_id}"
+            url = f"{STREAM_API}/{source_type}/{source_id}"
             resp = self.session.get(url, timeout=10)
             if resp.status_code == 200:
                 data = resp.json()
                 if isinstance(data, list) and len(data) > 0:
-                    return data[0].get('url') or data[0].get('link')
-                elif isinstance(data, dict):
-                    return data.get('url') or data.get('link')
+                    return data[0].get('url')
+                return data.get('url')
         except:
             pass
         return None
 
     def generate_m3u(self):
-        print(f"Connecting to {SOURCE_URL}...")
+        print("Fetching currently LIVE matches...")
         try:
-            response = self.session.get(SOURCE_URL, timeout=20)
+            # We add a cache-buster timestamp to avoid getting 'old' cached empty data
+            response = self.session.get(f"{BASE_URL}?t={int(datetime.now().timestamp())}", timeout=20)
             response.raise_for_status()
-            html = response.text
+            matches = response.json()
         except Exception as e:
-            print(f"Failed to connect: {e}")
+            print(f"Connection failed: {e}")
             return
 
-        # Regex to find match data inside the HTML 
-        # This targets the internal data structures used by the site
-        matches = re.findall(r'data-match=\'(.*?)\'', html)
-        
-        if not matches:
-            # Plan B: Try to find raw stream IDs in the text
-            print("Direct data not found, attempting deep scan...")
-            matches = re.findall(r'href="/watch/(.*?)"', html)
-
         m3u_content = ["#EXTM3U", ""]
-        count = 0
+        live_count = 0
+        now = datetime.now(timezone.utc)
 
-        for match_id in set(matches):
-            # Clean up match ID
-            match_id = match_id.strip()
+        for match in matches:
+            # Skip if match has no date (invalid)
+            if not match.get('date'):
+                continue
+                
+            event_time = datetime.fromtimestamp(match['date'] / 1000, tz=timezone.utc)
             
-            # For simplicity in this scraper, we assume standard sports categorization
-            # We try to resolve at least one working source for the match
-            # Note: streamed.pk usually uses 'admin', 'charlie', or 'echo' as sources
-            for provider in ['admin', 'charlie', 'echo']:
-                real_url = self.get_real_m3u8(provider, match_id)
-                if real_url:
-                    title = match_id.replace('-', ' ').title()
-                    m3u_content.append(f'#EXTINF:-1 group-title="Live Sports",{title} [{provider.upper()}]')
-                    m3u_content.append(real_url)
-                    count += 1
-                    break # Move to next match once one link is found
+            # STRICT "LIVE NOW" FILTER:
+            # Match must have started already (within last 4 hours) 
+            # OR is starting in the next 5 minutes.
+            hours_diff = (event_time - now).total_seconds() / 3600
+            
+            if -4 <= hours_diff <= 0.08: # 0.08 hours is approx 5 minutes
+                category = match.get('category', 'Live').title()
+                poster = f"https://streamed.su{match.get('poster', '')}"
+                
+                for source in match.get('sources', []):
+                    s_type = source.get('source')
+                    s_id = source.get('id')
+                    
+                    real_url = self.get_live_link(s_type, s_id)
+                    if real_url:
+                        display_name = f"LIVE: {match['title']} ({s_type.upper()})"
+                        m3u_content.append(f'#EXTINF:-1 tvg-logo="{poster}" group-title="{category}",{display_name}')
+                        m3u_content.append(real_url)
+                        live_count += 1
+                        break # Only take the first working source per match
 
         with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
             f.write('\n'.join(m3u_content))
         
-        print(f"✅ Success: Generated {OUTPUT_FILE} with {count} active channels.")
+        print(f"✅ Success: Generated {OUTPUT_FILE} with {live_count} currently LIVE matches.")
 
 if __name__ == "__main__":
     fetcher = StreamFetcher()
