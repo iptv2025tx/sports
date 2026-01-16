@@ -2,7 +2,7 @@ name: Update Sports Playlist
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '*/30 * * * *' # Runs every 30 mins since we only want "Live Now"
   workflow_dispatch:
 
 permissions:
@@ -23,7 +23,7 @@ jobs:
       - name: Install Dependencies
         run: pip install requests
 
-      - name: Run Scraper
+      - name: Run Live Scraper
         run: python streamed_fetcher.py
 
       - name: Commit Files
@@ -31,4 +31,4 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add streamed.m3u
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Updated links via web scraper" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Updated Live Now streams" && git push)
