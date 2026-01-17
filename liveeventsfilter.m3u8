@@ -89,21 +89,16 @@ https://d11.epicquesthero.com:999/hls/do10.m3u8?md5=AXCItXZeYu09TSimW507lA&expir
 #EXTVLCOPT:http-origin=http://www.fawanews.sc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 http://205.237.106.36/hls/zjjjqq.m3u8
-#EXTINF:-1 tvg-chno="42" tvg-id="Live.Event.us" tvg-name="[English League Two] Tranmere vs Walsall (FAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[English League Two] Tranmere vs Walsall (FAWA)
+#EXTINF:-1 tvg-chno="40" tvg-id="Live.Event.us" tvg-name="[English League One] Wigan vs Bolton (FAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[English League One] Wigan vs Bolton (FAWA)
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-origin=http://www.fawanews.sc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-http://205.237.106.36/hls/zjjjq.m3u8
+http://205.237.106.36/hls/zjjjqqq.m3u8
 #EXTINF:-1 tvg-chno="44" tvg-id="Soccer.Dummy.us" tvg-name="[English Premier League] Manchester City vs Manchester United (STRMSGATE)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/23.png" group-title="Live Events",[English Premier League] Manchester City vs Manchester United (STRMSGATE)
 #EXTVLCOPT:http-referrer=https://streamingon.org
 #EXTVLCOPT:http-origin=https://streamingon.org
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://instreams.live/EU/HDTV2/index.m3u8?st=2AQg56WNbHryDPLojrDyOg&e=1768665637
-#EXTINF:-1 tvg-chno="45" tvg-id="Soccer.Dummy.us" tvg-name="[English Premier League] Manchester United vs Manchester City 1 (FAWA)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/23.png" group-title="Live Events",[English Premier League] Manchester United vs Manchester City 1 (FAWA)
-#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
-#EXTVLCOPT:http-origin=http://www.fawanews.sc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-http://205.237.105.202/hls/jojojo.m3u8
 #EXTINF:-1 tvg-chno="46" tvg-id="Soccer.Dummy.us" tvg-name="[English Premier League] Manchester United vs Manchester City 2 HD (FAWA)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/23.png" group-title="Live Events",[English Premier League] Manchester United vs Manchester City 2 HD (FAWA)
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-origin=http://www.fawanews.sc/
@@ -544,11 +539,6 @@ http://205.237.106.36/hls/JDDDDQQQQQ.m3u8
 #EXTVLCOPT:http-origin=http://www.fawanews.sc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 http://205.237.106.36/hls/VIIIIQQQQ.m3u8
-#EXTINF:-1 tvg-chno="241" tvg-id="Live.Event.us" tvg-name="[Scottish Cup] Dunfermline vs Hibernian (FAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Scottish Cup] Dunfermline vs Hibernian (FAWA)
-#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
-#EXTVLCOPT:http-origin=http://www.fawanews.sc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-http://205.237.106.36/hls/zjjjqqqqqqq.m3u8
 #EXTINF:-1 tvg-chno="243" tvg-id="Soccer.Dummy.us" tvg-name="[Serie A] Cagliari vs Juventus (STRMBTW)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/12.png" group-title="Live Events",[Serie A] Cagliari vs Juventus (STRMBTW)
 #EXTVLCOPT:http-referrer=https://hiteasport.info/embed/soccer7.php
 #EXTVLCOPT:http-origin=https://hiteasport.info/embed/soccer7.php
