@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Essential for rebasing
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -29,10 +31,25 @@ jobs:
       - name: Run script
         run: python stplay.py
 
-      - name: Commit and push changes
+      - name: Commit and Safely Push
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+          
           git add istplay_streams.m3u
-          git commit -m "Automated M3U Update with EPG tags: $(date)" || exit 0
-          git push
+          
+          # Only commit if there are actually changes
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          
+          git commit -m "Automated M3U Update with EPG tags: $(date)"
+          
+          # This is the fix: if the push is rejected, pull the latest changes 
+          # from the other script and put our changes on top.
+          if ! git push origin main; then
+            echo "Push rejected. Syncing with other workflow changes..."
+            git pull origin main --rebase
+            git push origin main
+          fi
