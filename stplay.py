@@ -36,8 +36,7 @@ def get_m3u8_istplay(stream_id, headers):
         print(f"⚠️ Error (istplay stream_id={stream_id}): {e}", file=sys.stderr)
     return stream_id, None
 
-# --- 1.3. IstPlay: Sport names and logos ---
-# Default logo for any sport not explicitly listed below
+# --- 1.3. IstPlay: Sport names and logos (Full Translation Map) ---
 DEFAULT_LOGO = "https://cdn-icons-png.flaticon.com/512/531/531313.png"
 
 SPORT_TRANSLATION_ISTPLAY = {
@@ -48,7 +47,7 @@ SPORT_TRANSLATION_ISTPLAY = {
     "ICE_HOCKEY"  : {"name": "ICE HOCKEY", "logo": "https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg"},
     "TABLE_TENNIS": {"name": "TABLE TENNIS", "logo": "https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg"},
     "VOLLEYBALL"  : {"name": "VOLLEYBALL", "logo": "https://www.sidasturkiye.com/images/aktiviteler/alt-aktiviteler_voleybol4.jpg"},
-    "BADMINTON"   : {"name": "BADMİNTON", "logo": "https://sporium.net/wp-content/uploads/2017/12/badminton-malatya-il-sampiyonasi-9178452_8314_o.jpg"},
+    "BADMINTON"   : {"name": "BADMINTON", "logo": "https://sporium.net/wp-content/uploads/2017/12/badminton-malatya-il-sampiyonasi-9178452_8314_o.jpg"},
     "CRICKET"     : {"name": "CRICKET", "logo": "https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg"},
     "HANDBALL"    : {"name": "HANDBALL", "logo": "https://image.fanatik.com.tr/i/fanatik/75/0x410/6282949745d2a051587ed23b.jpg"},
     "BASEBALL"    : {"name": "BASEBALL", "logo": "https://seyler.ekstat.com/img/max/800/d/dqOJz5N8jLORqVaA-636783298725804088.jpg"},
@@ -56,10 +55,25 @@ SPORT_TRANSLATION_ISTPLAY = {
     "BILLIARDS"   : {"name": "BILLIARDS", "logo": "https://www.bilardo.org.tr/image/be2a4809f1c796e4453b45ccf0d9740c.jpg"},
     "BICYCLE"     : {"name": "CYCLING", "logo": "https://www.gazetekadikoy.com.tr/Uploads/gazetekadikoy.com.tr/202204281854011-img.jpg"},
     "BOXING"      : {"name": "BOXING", "logo": "https://www.sportsmith.co/wp-content/uploads/2023/04/Thumbnail-scaled.jpg"},
+    "AMERICAN_FOOTBALL": {"name": "AMERICAN FOOTBALL", "logo": "https://wallpaperaccess.com/full/301292.jpg"},
+    "MOTORSPORT"       : {"name": "MOTORSPORT", "logo": "https://wallpapercave.com/wp/wp4034220.jpg"},
+    "ESPORTS"          : {"name": "ESPORTS", "logo": "https://wallpaperaccess.com/full/438210.jpg"},
+    "DARTS"            : {"name": "DARTS", "logo": "https://images.alphacoders.com/520/520864.jpg"},
+    "RUGBY"            : {"name": "RUGBY", "logo": "https://wallpapercave.com/wp/wp1810625.jpg"},
+    "GOLF"             : {"name": "GOLF", "logo": "https://wallpaperaccess.com/full/1126425.jpg"},
+    "FIGHT"            : {"name": "UFC/MMA", "logo": "https://wallpapercave.com/wp/wp1833446.jpg"},
+    "BANDY"            : {"name": "BANDY", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Bandy_ball.jpg/640px-Bandy_ball.jpg"},
+    "FORMULA_1"        : {"name": "FORMULA 1", "logo": "https://wallpaperaccess.com/full/1154341.jpg"},
+    "HURLING"          : {"name": "HURLING", "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ad/All_Ireland_Hurling_Final_2015.jpg"},
+    "GAELIC_FOOTBALL"  : {"name": "GAELIC FOOTBALL", "logo": "https://upload.wikimedia.org/wikipedia/commons/2/23/Gaelic_football_match.jpg"},
+    "FLOORBALL"        : {"name": "FLOORBALL", "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Floorball_match.jpg"},
+    "FUTSAL"           : {"name": "FUTSAL", "logo": "https://upload.wikimedia.org/wikipedia/commons/4/41/Futsal_match.jpg"},
+    "UFC"              : {"name": "UFC", "logo": "https://wallpapercave.com/wp/wp1833446.jpg"},
+    "MARTIAL_ARTS"     : {"name": "MARTIAL ARTS", "logo": "https://wallpapercave.com/wp/wp1833441.jpg"},
 }
 
 def main():
-    print("📢 [IstPlay] Fetching stream list...")
+    print("📢 [IstPlay] Fetching live stream list...")
     url_list = "https://api.istplay.xyz/stream-list-v2/?tv=tv"
     headers = {
         "Accept": "application/json, text/plain, */*",
@@ -81,10 +95,10 @@ def main():
         return
 
     all_events = []
-    # Grab all sports from the 'sports' object dynamically
     for sport_key, sport_category in parsed.get("sports", {}).items():
         if not isinstance(sport_category, dict): continue
         events = sport_category.get("events", {})
+        # Handle both dict and list structures for events
         iterable = events.items() if isinstance(events, dict) else [(str(i), e) for i, e in enumerate(events)]
         for event_id, event_data in iterable:
             stream_id = event_data.get("stream_id")
@@ -123,6 +137,7 @@ def main():
             home = competitors.get("home", "").strip()
             away = competitors.get("away", "").strip()
             
+            # Timestamp to local time conversion
             start_timestamp = event_data.get("start_time")
             start_time_str = ""
             if start_timestamp:
@@ -131,8 +146,8 @@ def main():
                     start_time_str = f"[{dt_object.strftime('%H:%M')}] "
                 except: pass
 
-            # Use translation if available, otherwise fallback to raw name and generic icon
-            sport_info = SPORT_TRANSLATION_ISTPLAY.get(sport_key.upper(), {"name": sport_key.upper(), "logo": DEFAULT_LOGO})
+            # Lookup translation/logo
+            sport_info = SPORT_TRANSLATION_ISTPLAY.get(sport_key.upper(), {"name": sport_key.replace('_', ' ').upper(), "logo": DEFAULT_LOGO})
             display_sport = sport_info["name"]
             logo_url = sport_info.get("logo", DEFAULT_LOGO)
 
