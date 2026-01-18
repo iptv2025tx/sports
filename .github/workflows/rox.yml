@@ -45,12 +45,8 @@ jobs:
             exit 0
           fi
 
-          git commit -m "📺 Updated RoxieStreams: Full Category Support & Mirrors ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+          git commit -m "📺 Updated RoxieStreams: NFL & Multi-Category Support ($(date -u +'%Y-%m-%d %H:%M UTC'))"
 
-          # Random delay to reduce push collisions
-          sleep $((RANDOM % 10 + 5))
-
-          if ! git push origin main; then
-            git pull origin main --rebase
-            git push origin main
-          fi
+          # Use rebase to prevent push collisions
+          git pull --rebase origin main
+          git push origin main
