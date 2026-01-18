@@ -1,112 +1,135 @@
-import logging
-from requests_html import HTMLSession
+import requests
 import re
-import os
+from bs4 import BeautifulSoup
+from urllib.parse import urljoin, urlparse
+from requests.exceptions import RequestException
+import logging
 
-# Integrated Settings & Constants
 BASE_URL = "https://roxiestreams.live"
 EPG_URL = "https://epgshare01.online/epgshare01/epg_ripper_DUMMY_CHANNELS.xml.gz"
 
-# Starting with the Home Page + Category Pages
-START_URLS = [
-    BASE_URL,
-    f"{BASE_URL}/nfl",
-    f"{BASE_URL}/soccer",
-    f"{BASE_URL}/mlb",
-    f"{BASE_URL}/nba",
-    f"{BASE_URL}/nhl",
-    f"{BASE_URL}/fighting",
-    f"{BASE_URL}/motorsports"
-]
-
+# Integrated Mapping
 TV_INFO = {
+    "ppv": ("PPV.EVENTS.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/ppv2.png?raw=true", "PPV Events"),
     "soccer": ("Soccer.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/football.png?raw=true", "Soccer"),
-    "nfl": ("Football.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/nfl.png?raw=true", "Football"),
-    "nba": ("NBA.Basketball.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/nba.png?raw=true", "Basketball"),
-    "mlb": ("MLB.Baseball.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/baseball.png?raw=true", "Baseball"),
-    "nhl": ("NHL.Hockey.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/nhl.png?raw=true", "Hockey"),
-    "fighting": ("Combat.Sports.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/boxing.png?raw=true", "Combat Sports"),
     "ufc": ("UFC.Fight.Pass.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/mma.png?raw=true", "Combat Sports"),
-    "motorsports": ("Racing.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/f1.png?raw=true", "Motorsports")
+    "fighting": ("Combat.Sports.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/boxing.png?raw=true", "Combat Sports"),
+    "nfl": ("Football.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/nfl.png?raw=true", "Football"),
+    "nhl": ("NHL.Hockey.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/hockey.png?raw=true", "Hockey"),
+    "f1": ("Racing.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/f1.png?raw=true", "Motorsports"),
+    "motorsports": ("Racing.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/f1.png?raw=true", "Motorsports"),
+    "nba": ("NBA.Basketball.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/nba.png?raw=true", "Basketball"),
+    "mlb": ("MLB.Baseball.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/baseball.png?raw=true", "Baseball")
 }
 
 DEFAULT_LOGO = "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/default.png?raw=true"
+DEFAULT_GROUP = "General Sports"
+DISCOVERY_KEYWORDS = list(TV_INFO.keys()) + ['streams']
+
+SESSION = requests.Session()
+SESSION.headers.update({
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'Referer': BASE_URL
+})
+
 M3U8_REGEX = re.compile(r'https?://[^\s"\'<>`]+\.m3u8')
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
-
-def get_tv_info(url, title):
+def get_tv_info(url, title=""):
     combined = (url + title).lower()
     for key, (epg_id, logo, group) in TV_INFO.items():
-        if key in combined:
-            return epg_id, logo, group
-    return "Sports.Rox.us", DEFAULT_LOGO, "General Sports"
+        if key in combined: return epg_id, logo, group
+    return "Sports.Rox.us", DEFAULT_LOGO, DEFAULT_GROUP
+
+def discover_sections(base_url):
+    """Finds top-level categories and ensures major ones aren't missed."""
+    sections_found = [
+        (f"{BASE_URL}/nfl", "NFL"),
+        (f"{BASE_URL}/mlb", "MLB"),
+        (f"{BASE_URL}/nba", "NBA"),
+        (f"{BASE_URL}/nhl", "NHL"),
+        (f"{BASE_URL}/soccer", "Soccer"),
+        (f"{BASE_URL}/fighting", "Fighting"),
+        (f"{BASE_URL}/motorsports", "Motorsports")
+    ]
+    try:
+        resp = SESSION.get(base_url, timeout=10)
+        soup = BeautifulSoup(resp.text, 'html.parser')
+        existing_urls = {s[0] for s in sections_found}
+        for a in soup.find_all('a', href=True):
+            abs_url = urljoin(base_url, a['href'])
+            if abs_url.startswith(BASE_URL) and any(k in abs_url.lower() for k in DISCOVERY_KEYWORDS):
+                if abs_url not in existing_urls:
+                    sections_found.append((abs_url, a.get_text(strip=True)))
+                    existing_urls.add(abs_url)
+    except: pass
+    return sections_found
+
+def discover_event_links(section_url):
+    """Checks for the eventsTable and follows stream links."""
+    events = set()
+    try:
+        resp = SESSION.get(section_url, timeout=10)
+        soup = BeautifulSoup(resp.text, 'html.parser')
+        # Target the specific table you identified
+        table = soup.find('table', id='eventsTable')
+        links = table.find_all('a', href=True) if table else soup.find_all('a', href=True)
+        
+        for a in links:
+            href = a['href']
+            title = a.get_text(strip=True)
+            if '/stream/' in href or any(s in href.lower() for s in TV_INFO.keys()):
+                events.add((urljoin(section_url, href), title))
+    except: pass
+    return events
+
+def extract_m3u8_links(page_url):
+    """Scrapes page and nested iframes for stream links."""
+    links = set()
+    try:
+        resp = SESSION.get(page_url, timeout=10)
+        links.update(M3U8_REGEX.findall(resp.text))
+        
+        # Check iframes (NFL streams often hide here)
+        soup = BeautifulSoup(resp.text, 'html.parser')
+        for iframe in soup.find_all('iframe', src=True):
+            if_url = urljoin(page_url, iframe['src'])
+            if 'roxiestreams' in if_url or 'embed' in if_url:
+                if_resp = SESSION.get(if_url, timeout=5)
+                links.update(M3U8_REGEX.findall(if_resp.text))
+    except: pass
+    return links
 
 def main():
-    session = HTMLSession()
     playlist = [f'#EXTM3U x-tvg-url="{EPG_URL}"']
-    seen_m3u8 = set()
-    processed_events = set()
+    sections = discover_sections(BASE_URL)
+    seen_links = set()
+    title_tracker = {}
 
-    for start_url in START_URLS:
-        logging.info(f"Scanning for events at: {start_url}")
-        try:
-            r = session.get(start_url, timeout=15)
-            # Find links specifically inside the events table
-            event_links = r.html.find('#eventsTable a')
-            
-            for link in event_links:
-                event_title = link.text.strip()
-                event_url = list(link.absolute_links)[0]
-                
-                if event_url in processed_events:
-                    continue
-                
-                logging.info(f"Opening Event Page: {event_title}")
-                processed_events.add(event_url)
+    for section_url, section_title in sections:
+        logging.info(f"Scanning Section: {section_title}")
+        events = discover_event_links(section_url)
+        
+        for event_url, event_title in events:
+            m3u8_links = extract_m3u8_links(event_url)
+            for link in m3u8_links:
+                if link in seen_links: continue
                 
                 try:
-                    event_page = session.get(event_url, timeout=20)
-                    # Render JS and wait 4 seconds for the player to initialize
-                    event_page.html.render(sleep=4, timeout=30)
-                    
-                    # Search for m3u8 in the rendered HTML
-                    found_links = M3U8_REGEX.findall(event_page.html.html)
-                    
-                    # If none found, look inside iframes
-                    if not found_links:
-                        for iframe in event_page.html.find('iframe'):
-                            src = iframe.attrs.get('src', '')
-                            if src:
-                                if not src.startswith('http'):
-                                    src = f"https:{src}" if src.startswith('//') else f"{BASE_URL}{src}"
-                                try:
-                                    if 'google' not in src and 'twitter' not in src:
-                                        if_r = session.get(src, timeout=10)
-                                        found_links.extend(M3U8_REGEX.findall(if_r.text))
-                                except: continue
-
-                    for m3u8 in found_links:
-                        if m3u8 not in seen_m3u8:
-                            # Verify the link is actually reachable
-                            try:
-                                head = session.get(m3u8, stream=True, timeout=5)
-                                if head.status_code == 200:
-                                    eid, logo, grp = get_tv_info(event_url, event_title)
-                                    playlist.append(f'#EXTINF:-1 tvg-id="{eid}" tvg-logo="{logo}" group-title="{grp}",{event_title}')
-                                    playlist.append(m3u8)
-                                    seen_m3u8.add(m3u8)
-                                    logging.info(f"Successfully added: {event_title}")
-                            except: continue
-                except Exception as e:
-                    logging.error(f"Error processing {event_url}: {e}")
-                    
-        except Exception as e:
-            logging.error(f"Could not access {start_url}: {e}")
+                    if SESSION.head(link, timeout=5).status_code == 200:
+                        tv_id, logo, group = get_tv_info(event_url, event_title)
+                        title_tracker[event_title] = title_tracker.get(event_title, 0) + 1
+                        count = title_tracker[event_title]
+                        name = event_title if count == 1 else f"{event_title} (Mirror {count-1})"
+                        
+                        playlist.append(f'#EXTINF:-1 tvg-id="{tv_id}" tvg-logo="{logo}" group-title="{group}",{name}')
+                        playlist.append(link)
+                        seen_links.add(link)
+                        logging.info(f"  > Added: {name}")
+                except: continue
 
     with open("Roxiestreams.m3u", "w", encoding="utf-8") as f:
         f.write("\n".join(playlist))
-    logging.info(f"Scrape Complete. Total streams: {len(seen_m3u8)}")
 
 if __name__ == "__main__":
     main()
