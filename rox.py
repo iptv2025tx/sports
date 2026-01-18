@@ -1,6 +1,7 @@
 import logging
 from requests_html import HTMLSession
 import re
+import os
 
 # Integrated Settings & Constants
 BASE_URL = "https://roxiestreams.live"
@@ -40,36 +41,50 @@ def main():
     for cat_url in CATEGORIES:
         logging.info(f"Scanning Category: {cat_url}")
         try:
-            r = session.get(cat_url)
-            # Find the table and all links within it
-            table = r.html.find('#eventsTable', first=True)
-            if not table:
-                logging.warning(f"No table found at {cat_url}")
+            r = session.get(cat_url, timeout=15)
+            # Find all links in the events table
+            links = r.html.find('#eventsTable a')
+            
+            if not links:
+                logging.info(f"No active events found in {cat_url}")
                 continue
 
-            links = table.find('a')
             for link in links:
                 event_title = link.text.strip()
                 event_url = list(link.absolute_links)[0]
                 
-                logging.info(f"Opening event: {event_title}")
-                event_page = session.get(event_url)
-                # Render JS to find hidden m3u8
-                event_page.html.render(timeout=20)
-                
-                m3u8_links = M3U8_REGEX.findall(event_page.html.html)
-                for m3u8 in m3u8_links:
-                    if m3u8 not in seen_streams:
-                        eid, logo, grp = get_tv_info(cat_url)
-                        playlist.append(f'#EXTINF:-1 tvg-id="{eid}" tvg-logo="{logo}" group-title="{grp}",{event_title}')
-                        playlist.append(m3u8)
-                        seen_streams.add(m3u8)
-                        logging.info(f"Found Stream: {event_title}")
+                logging.info(f"Processing Event: {event_title}")
+                try:
+                    event_page = session.get(event_url, timeout=15)
+                    # Use a longer sleep to allow the player/m3u8 to populate
+                    event_page.html.render(sleep=3, timeout=20)
+                    
+                    m3u8_matches = M3U8_REGEX.findall(event_page.html.html)
+                    
+                    if not m3u8_matches:
+                        # Backup check: some players load m3u8 in iframes
+                        for iframe in event_page.html.find('iframe'):
+                            iframe_src = iframe.attrs.get('src', '')
+                            if iframe_src:
+                                if_resp = session.get(iframe_src, timeout=10)
+                                m3u8_matches.extend(M3U8_REGEX.findall(if_resp.text))
+
+                    for m3u8 in m3u8_matches:
+                        if m3u8 not in seen_streams:
+                            eid, logo, grp = get_tv_info(cat_url)
+                            playlist.append(f'#EXTINF:-1 tvg-id="{eid}" tvg-logo="{logo}" group-title="{grp}",{event_title}')
+                            playlist.append(m3u8)
+                            seen_streams.add(m3u8)
+                            logging.info(f"Found Stream: {event_title}")
+                except Exception as inner_e:
+                    logging.error(f"Failed to render {event_url}: {inner_e}")
+                    
         except Exception as e:
-            logging.error(f"Error at {cat_url}: {e}")
+            logging.error(f"Failed to access {cat_url}: {e}")
 
     with open("Roxiestreams.m3u", "w", encoding="utf-8") as f:
         f.write("\n".join(playlist))
+    logging.info(f"Scrape finished. Total streams found: {len(seen_streams)}")
 
 if __name__ == "__main__":
     main()
