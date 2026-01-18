@@ -1,14 +1,14 @@
 import requests
 import re
 from bs4 import BeautifulSoup
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 import logging
 
 # Integrated Settings & Constants
 BASE_URL = "https://roxiestreams.live"
 EPG_URL = "https://epgshare01.online/epgshare01/epg_ripper_DUMMY_CHANNELS.xml.gz"
 
-# The specific categories you provided
+# Explicit Category URLs as requested
 CATEGORIES = [
     f"{BASE_URL}/nfl",
     f"{BASE_URL}/soccer",
@@ -53,50 +53,34 @@ def get_tv_info(url, title=""):
     return "Sports.Rox.us", DEFAULT_LOGO, DEFAULT_GROUP
 
 def extract_event_links(cat_url):
-    """Finds links to individual game players within a category page."""
     events = set()
     try:
         resp = SESSION.get(cat_url, timeout=10)
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, 'html.parser')
         
-        # Look for links that contain team vs team or game names
         for a_tag in soup.find_all('a', href=True):
             href = a_tag['href']
             title = a_tag.get_text(strip=True)
-            
-            # Filter: Links should be internal and have a title (e.g. "Cowboys vs Giants")
-            if href and title and not href.endswith(('/nfl', '/nba', '/mlb', '/nhl', '/soccer')):
+            if href and title and len(title) > 3:
                 abs_url = urljoin(BASE_URL, href)
-                if abs_url.startswith(BASE_URL):
+                # Ensure we are linking to actual event pages, not categories
+                if abs_url.startswith(BASE_URL) and not any(cat in abs_url.lower() for cat in ['/nfl', '/nba', '/mlb', '/nhl', '/soccer']):
                     events.add((abs_url, title))
     except Exception as e:
         logging.error(f"Error reading category {cat_url}: {e}")
     return events
 
 def extract_m3u8_links(page_url):
-    """Extracts .m3u8 from the actual stream/player page."""
     links = set()
     try:
         resp = SESSION.get(page_url, timeout=10)
         resp.raise_for_status()
-        
-        # Standard Regex for m3u8
         links.update(M3U8_REGEX.findall(resp.text))
         
-        # Obfuscated script source check
+        # Hidden player files
         scripts = re.findall(r'file:\s*["\'](.*?\.m3u8.*?)["\']', resp.text)
         links.update(scripts)
-        
-        # Check for iframes that might host the player
-        soup = BeautifulSoup(resp.text, 'html.parser')
-        for iframe in soup.find_all('iframe', src=True):
-            iframe_url = urljoin(page_url, iframe['src'])
-            # Briefly check iframe content if it's on the same domain
-            if urlparse(iframe_url).netloc == urlparse(BASE_URL).netloc:
-                if_resp = SESSION.get(iframe_url, timeout=5)
-                links.update(M3U8_REGEX.findall(if_resp.text))
-                
     except Exception:
         pass
     return links
@@ -114,7 +98,7 @@ def main():
     title_tracker = {}
 
     for cat_url in CATEGORIES:
-        logging.info(f"Processing Category: {cat_url}")
+        logging.info(f"Scraping: {cat_url}")
         events = extract_event_links(cat_url)
         
         for event_url, event_title in events:
@@ -122,8 +106,7 @@ def main():
             m3u8_links = extract_m3u8_links(event_url)
             
             for link in m3u8_links:
-                if link in seen_links:
-                    continue
+                if link in seen_links: continue
                 
                 if check_stream_status(link):
                     title_tracker[event_title] = title_tracker.get(event_title, 0) + 1
@@ -133,12 +116,10 @@ def main():
                     playlist_lines.append(f'#EXTINF:-1 tvg-id="{tv_id}" tvg-logo="{logo}" group-title="{group_name}",{display_name}')
                     playlist_lines.append(link)
                     seen_links.add(link)
-                    logging.info(f"Found: {display_name}")
 
     with open("Roxiestreams.m3u", "w", encoding="utf-8") as f:
         f.write("\n".join(playlist_lines))
-    
-    logging.info(f"Playlist Generation Complete. Total streams: {len(seen_links)}")
+    logging.info(f"Finished! Found {len(seen_links)} live streams.")
 
 if __name__ == "__main__":
     main()
