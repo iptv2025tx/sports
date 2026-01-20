@@ -1,9 +1,4 @@
 #EXTM3U url-tvg="https://epgshare01.online/epgshare01/epg_ripper_DUMMY_CHANNELS.xml.gz"
-#EXTINF:-1 tvg-chno="1" tvg-id="Live.Event.us" tvg-name="[Argentina Torneo Betano] Estudiantes LP vs Ituzaingo (FAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Argentina Torneo Betano] Estudiantes LP vs Ituzaingo (FAWA)
-#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
-#EXTVLCOPT:http-origin=http://www.fawanews.sc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-http://37.49.225.198/hls/SHHHQQ.m3u8
 #EXTINF:-1 tvg-chno="19" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[Basketball] Miami Heat at Golden State Warriors (STRMCNTR)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[Basketball] Miami Heat at Golden State Warriors (STRMCNTR)
 #EXTVLCOPT:http-referrer=https://streamcenter.xyz
 #EXTVLCOPT:http-origin=https://streamcenter.xyz
@@ -79,16 +74,6 @@ https://cd.tookit.shop:2053/storage/s1/index.m3u8
 #EXTVLCOPT:http-origin=https://pawastreams.net/villarreal-v-ajax/97499/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://cd.tookit.shop:2053/storage/bus/index.m3u8
-#EXTINF:-1 tvg-chno="50" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA Basketball] Brooklyn Nets vs Phoenix Suns 1 (FAWA)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA Basketball] Brooklyn Nets vs Phoenix Suns 1 (FAWA)
-#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
-#EXTVLCOPT:http-origin=http://www.fawanews.sc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-http://37.49.225.198/hls/SUUUQQQQ.m3u8
-#EXTINF:-1 tvg-chno="52" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA Basketball] Detroit Pistons vs Boston Celtics 1 (FAWA)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA Basketball] Detroit Pistons vs Boston Celtics 1 (FAWA)
-#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
-#EXTVLCOPT:http-origin=http://www.fawanews.sc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-http://37.49.225.198/hls/SUUUQQQQQ.m3u8
 #EXTINF:-1 tvg-chno="54" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA Basketball] Golden State Warriors vs Miami Heat 1 (FAWA)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA Basketball] Golden State Warriors vs Miami Heat 1 (FAWA)
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-origin=http://www.fawanews.sc/
@@ -99,11 +84,6 @@ http://37.49.225.198/hls/SDFFF.m3u8
 #EXTVLCOPT:http-origin=https://matchify.zip/nba/event1/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://matchify.zip/nbaa1.php
-#EXTINF:-1 tvg-chno="63" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Boston Celtics @ Detroit Pistons (TVPASS)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA] Boston Celtics @ Detroit Pistons (TVPASS)
-#EXTVLCOPT:http-referrer=https://tvpass.org
-#EXTVLCOPT:http-origin=https://tvpass.org
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-http://origin.thetvapp.to/hls/NBA08/mono.m3u8
 #EXTINF:-1 tvg-chno="67" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Brooklyn Nets vs Phoenix Suns (TOTALSPRTK)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA] Brooklyn Nets vs Phoenix Suns (TOTALSPRTK)
 #EXTVLCOPT:http-referrer=https://matchify.zip/nba/event7/
 #EXTVLCOPT:http-origin=https://matchify.zip/nba/event7/
@@ -174,51 +154,16 @@ https://matchify.zip/nbaa5.php
 #EXTVLCOPT:http-origin=https://matchify.zip/nba/event3/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://matchify.zip/nbaa3.php
-#EXTINF:-1 tvg-chno="123" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA American Football] Indiana vs Miami 1 (FAWA)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="Live Events",[NCAA American Football] Indiana vs Miami 1 (FAWA)
-#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
-#EXTVLCOPT:http-origin=http://www.fawanews.sc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-http://37.49.225.198/hls/SDFFFQQ.m3u8
-#EXTINF:-1 tvg-chno="124" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA American Football] Indiana vs Miami 2 (FAWA)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="Live Events",[NCAA American Football] Indiana vs Miami 2 (FAWA)
-#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
-#EXTVLCOPT:http-origin=http://www.fawanews.sc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-http://37.49.225.198/hls/SDFFFQ.m3u8
-#EXTINF:-1 tvg-chno="125" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA American Football] Indiana vs Miami Feed (FAWA)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="Live Events",[NCAA American Football] Indiana vs Miami Feed (FAWA)
-#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
-#EXTVLCOPT:http-origin=http://www.fawanews.sc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-http://37.49.225.198/hls/hrrrq.m3u8
 #EXTINF:-1 tvg-chno="126" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA American Football] Indiana vs Miamiast (FAWA)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="Live Events",[NCAA American Football] Indiana vs Miamiast (FAWA)
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-origin=http://www.fawanews.sc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 http://37.49.225.198/hls/hrrrqQ.m3u8
-#EXTINF:-1 tvg-chno="127" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA American Football] Indiana vs Miamii Feed (FAWA)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="Live Events",[NCAA American Football] Indiana vs Miamii Feed (FAWA)
-#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
-#EXTVLCOPT:http-origin=http://www.fawanews.sc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-http://37.49.225.198/hls/hrrr.m3u8
 #EXTINF:-1 tvg-chno="146" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAAF] Miami Hurricanes @ Indiana Hoosiers (TVPASS)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="Live Events",[NCAAF] Miami Hurricanes @ Indiana Hoosiers (TVPASS)
 #EXTVLCOPT:http-referrer=https://tvpass.org
 #EXTVLCOPT:http-origin=https://tvpass.org
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 http://origin.thetvapp.to/hls/ESPN/mono.m3u8
-#EXTINF:-1 tvg-chno="150" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL Hockey] Anaheim Ducks vs New York Rangers (FAWA)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL Hockey] Anaheim Ducks vs New York Rangers (FAWA)
-#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
-#EXTVLCOPT:http-origin=http://www.fawanews.sc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-http://37.49.225.198/hls/SUUUQ.m3u8
-#EXTINF:-1 tvg-chno="151" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL Hockey] Calgary Flames vs New Jersey Devils (FAWA)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL Hockey] Calgary Flames vs New Jersey Devils (FAWA)
-#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
-#EXTVLCOPT:http-origin=http://www.fawanews.sc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-http://37.49.225.198/hls/SUUU.m3u8
-#EXTINF:-1 tvg-chno="155" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL Hockey] Vancouver Canucks vs New York Islanders (FAWA)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL Hockey] Vancouver Canucks vs New York Islanders (FAWA)
-#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
-#EXTVLCOPT:http-origin=http://www.fawanews.sc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-http://37.49.225.198/hls/SUUUQQ.m3u8
 #EXTINF:-1 tvg-chno="159" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Anaheim Ducks vs New York Rangers (iSTRMEAST)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL] Anaheim Ducks vs New York Rangers (iSTRMEAST)
 #EXTVLCOPT:http-referrer=https://gooz.aapmains.net
 #EXTVLCOPT:http-origin=https://gooz.aapmains.net
