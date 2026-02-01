@@ -179,11 +179,6 @@ https://d13.epicquesthero.com:999/hls/do99.m3u8?md5=2tG63tw0LugozrD7lYGe5A&expir
 #EXTVLCOPT:http-origin=https://vividmosaica.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://d12.epicquesthero.com:999/hls/do17.m3u8?md5=OLE9liG01h4oCNBxS2JRKg&expires=1769972516
-#EXTINF:-1 tvg-chno="116" tvg-id="Live.Event.us" tvg-name="[Germany Frauen-Bundesliga] Hoffenheim vs Werder Bremen (SPORT9)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Germany Frauen-Bundesliga] Hoffenheim vs Werder Bremen (SPORT9)
-#EXTVLCOPT:http-referrer=https://vividmosaica.com/
-#EXTVLCOPT:http-origin=https://vividmosaica.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://d13.epicquesthero.com:999/hls/do100.m3u8?md5=O0LOCXhlJZJbB4NJzhplgw&expires=1769968846
 #EXTINF:-1 tvg-chno="118" tvg-id="Golf.Dummy.us" tvg-name="[Golf PGA] Golf PGA Farmers Insurance Open (FAWA)" tvg-logo="https://1000logos.net/wp-content/uploads/2024/10/PGA-Tour-Logo-500x281.png" group-title="Live Events",[Golf PGA] Golf PGA Farmers Insurance Open (FAWA)
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-origin=http://www.fawanews.sc/
@@ -194,6 +189,11 @@ https://a.swinapi.sbs/hls/kokokoQ.m3u8
 #EXTVLCOPT:http-origin=http://www.fawanews.sc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 http://205.237.105.46/hls/gdddqq.m3u8
+#EXTINF:-1 tvg-chno="121" tvg-id="Soccer.Dummy.us" tvg-name="[Greece Super League] Panathinaikos vs Kifisia (SPORT9)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/98.png" group-title="Live Events",[Greece Super League] Panathinaikos vs Kifisia (SPORT9)
+#EXTVLCOPT:http-referrer=https://vividmosaica.com/
+#EXTVLCOPT:http-origin=https://vividmosaica.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://d15.epicquesthero.com:999/hls/do23.m3u8?md5=JB2qDkmX0jaL0v7mSX_ozw&expires=1769968893
 #EXTINF:-1 tvg-chno="124" tvg-id="Live.Event.us" tvg-name="[Handball EHF Euro] Denmark vs Germany 1 (FAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Handball EHF Euro] Denmark vs Germany 1 (FAWA)
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-origin=http://www.fawanews.sc/
@@ -309,11 +309,6 @@ https://d11.epicquesthero.com:999/hls/do60.m3u8?md5=J2dFvtSuaqVQz6BQUBK8kg&expir
 #EXTVLCOPT:http-origin=https://cdn-live.tv/api/v1/channels/player/?name=astro+premier+league&code=us&user=cdnlivetv&plan=free
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://cdn-live-tv.ru/api/v1/channels/us-astro-premier-league/index.m3u8?token=e3ad41d3ca125892644ca0ea98c21d1786041a660282928da41cf02dc9040d0d.1769961708.9f6922752eb3cd1beec2cfab8d019d5e.aa927b7ce11ce05d63e8031acacb227d.4a680d9c614d2c3451527c0c0d57b0e4.dfd2449b5d12fba3
-#EXTINF:-1 tvg-chno="262" tvg-id="Soccer.Dummy.us" tvg-name="[Premier League] Tottenham Hotspur - Manchester City (EMBEDHD)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/23.png" group-title="Live Events",[Premier League] Tottenham Hotspur - Manchester City (EMBEDHD)
-#EXTVLCOPT:http-referrer=https://vividmosaica.com/
-#EXTVLCOPT:http-origin=https://vividmosaica.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://d12.epicquesthero.com:999/hls/ntottenhamhotspur.m3u8?md5=kipmodZ7n-Wcey-oDLvDag&expires=1769968863
 #EXTINF:-1 tvg-chno="263" tvg-id="Soccer.Dummy.us" tvg-name="[Premier League] Tottenham Hotspur vs Manchester City (iSTRMEAST)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/23.png" group-title="Live Events",[Premier League] Tottenham Hotspur vs Manchester City (iSTRMEAST)
 #EXTVLCOPT:http-referrer=https://gooz.aapmains.net
 #EXTVLCOPT:http-origin=https://gooz.aapmains.net
@@ -329,11 +324,6 @@ https://cdn-live-tv.ru/api/v1/channels/pt-sport-tv-1/index.m3u8?token=44dcd2997e
 #EXTVLCOPT:http-origin=https://gooz.aapmains.net
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://red5.boostaether.shop/playlist/44442/load-playlist
-#EXTINF:-1 tvg-chno="276" tvg-id="Soccer.Dummy.us" tvg-name="[Segunda Division] Cádiz vs Huesca (CDNTV)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/107.png" group-title="Live Events",[Segunda Division] Cádiz vs Huesca (CDNTV)
-#EXTVLCOPT:http-referrer=https://cdn-live.tv/api/v1/channels/player/?name=laliga+tv+hypermotion+1&code=es&user=cdnlivetv&plan=free
-#EXTVLCOPT:http-origin=https://cdn-live.tv/api/v1/channels/player/?name=laliga+tv+hypermotion+1&code=es&user=cdnlivetv&plan=free
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn-live-tv.ru/api/v1/channels/es-laliga-tv-hypermotion-1/index.m3u8?token=2a8aed2df7915a09b03555441cc4730ca21143d08bf601a5cb40f5f8d430860f.1769965286.1b4219ca751c0495ee1d24084e547c97.fe3ce93c209aeb19de1a856245313d6d.5ca3a4bb39e50a0bb5a29473cebb169c.ec902e4809e4c788
 #EXTINF:-1 tvg-chno="286" tvg-id="Soccer.Dummy.us" tvg-name="[Serie A] Bologna vs Milan (iSTRMEAST)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/12.png" group-title="Live Events",[Serie A] Bologna vs Milan (iSTRMEAST)
 #EXTVLCOPT:http-referrer=https://gooz.aapmains.net
 #EXTVLCOPT:http-origin=https://gooz.aapmains.net
@@ -364,36 +354,11 @@ https://cdn-live-tv.ru/api/v1/channels/it-sky-sport-254/index.m3u8?token=037649e
 #EXTVLCOPT:http-origin=https://otheremotions.com/good/?id=1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://dgzz4gmtu2krx.cloudfront.net/status/1/fronts.woff2?16f728
-#EXTINF:-1 tvg-chno="300" tvg-id="Soccer.Dummy.us" tvg-name="[Spain La Liga] Real Betis vs Valencia (SPORT9)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" group-title="Live Events",[Spain La Liga] Real Betis vs Valencia (SPORT9)
-#EXTVLCOPT:http-referrer=https://vividmosaica.com/
-#EXTVLCOPT:http-origin=https://vividmosaica.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://d14.epicquesthero.com:999/hls/do6.m3u8?md5=0FFiE0nKPOzT4uopuP62Fw&expires=1769968858
-#EXTINF:-1 tvg-chno="302" tvg-id="Soccer.Dummy.us" tvg-name="[Spain Segunda Division] Eibar vs Sporting Gijon (SPORT9)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/107.png" group-title="Live Events",[Spain Segunda Division] Eibar vs Sporting Gijon (SPORT9)
-#EXTVLCOPT:http-referrer=https://vividmosaica.com/
-#EXTVLCOPT:http-origin=https://vividmosaica.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://d11.epicquesthero.com:999/hls/do26.m3u8?md5=2tOMxjU1P5LY9popdD-LIA&expires=1769968868
 #EXTINF:-1 tvg-chno="305" tvg-id="Soccer.Dummy.us" tvg-name="[Spanish La Liga] Real Madrid vs Rayo Vallecano HD (FAWA)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" group-title="Live Events",[Spanish La Liga] Real Madrid vs Rayo Vallecano HD (FAWA)
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-origin=http://www.fawanews.sc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://pullsgp.yyzb456.top/live/stream-190118_lhd.m3u8
-#EXTINF:-1 tvg-chno="310" tvg-id="Live.Event.us" tvg-name="[Super League] Panserraikos vs PAOK (CDNTV)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Super League] Panserraikos vs PAOK (CDNTV)
-#EXTVLCOPT:http-referrer=https://cdn-live.tv/api/v1/channels/player/?name=nova+sports+prime&code=gr&user=cdnlivetv&plan=free
-#EXTVLCOPT:http-origin=https://cdn-live.tv/api/v1/channels/player/?name=nova+sports+prime&code=gr&user=cdnlivetv&plan=free
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn-live-tv.ru/api/v1/channels/gr-nova-sports-prime/index.m3u8?token=d955c902436f1289d0c85d3ae9ec53eedcf359d3c59570203327dd8f6b97ecee.1769965294.657b2b29f4b7f8bff4764984ae52f337.f6b1d2948a758e58926ea62de847c332.d0d51c9f4471c1fc1b462d39347096cf.38a9ca3e26a02236
-#EXTINF:-1 tvg-chno="311" tvg-id="Soccer.Dummy.us" tvg-name="[Super Lig] Kayserispor vs Galatasaray (CDNTV)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/18.png" group-title="Live Events",[Super Lig] Kayserispor vs Galatasaray (CDNTV)
-#EXTVLCOPT:http-referrer=https://cdn-live.tv/api/v1/channels/player/?name=bein+sports+2&code=us&user=cdnlivetv&plan=free
-#EXTVLCOPT:http-origin=https://cdn-live.tv/api/v1/channels/player/?name=bein+sports+2&code=us&user=cdnlivetv&plan=free
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn-live-tv.ru/api/v1/channels/us-bein-sports-2/index.m3u8?token=b78e67f3d4e5bcbb03e97b6ffe17bd5cb675deee6fbbb78cd0e6bfd411c6ec69.1769965248.6c113cd9390664a5f9e8066e29c799f0.2855809596573b1ff3e79374d66c90d1.83e72c02afd23b5020db719698b68cf0.dbf09eb4f568ef60
-#EXTINF:-1 tvg-chno="315" tvg-id="Live.Event.us" tvg-name="[Sweden Allsvenskan] Kalmar HC vs AIK (SPORT9)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Sweden Allsvenskan] Kalmar HC vs AIK (SPORT9)
-#EXTVLCOPT:http-referrer=https://vividmosaica.com/
-#EXTVLCOPT:http-origin=https://vividmosaica.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://d14.epicquesthero.com:999/hls/do75.m3u8?md5=AgGMkh64C-yih6ZjPzqf0w&expires=1769968907
 #EXTINF:-1 tvg-chno="316" tvg-id="Live.Event.us" tvg-name="[Sweden HockeyAllsvenskan] Kalmar vs AIK (FAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Sweden HockeyAllsvenskan] Kalmar vs AIK (FAWA)
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-origin=http://www.fawanews.sc/
