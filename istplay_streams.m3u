@@ -1,15 +1,5 @@
 #EXTM3U url-tvg="https://epgshare01.online/epgshare01/epg_ripper_DUMMY_CHANNELS.xml.gz"
 
-#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="FOOTBALL" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" tvg-type="2" group-title="FOOTBALL",PSD DEMAK vs PERSIHARJO SUKOHARJO (INDONESIA LIGA 4)
-https://e1-22.n4154.xyz/36568395.m3u8
-#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="FOOTBALL" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" tvg-type="2" group-title="FOOTBALL",HOREZM vs MEDZY II (CLUB FRIENDLIES)
-https://e2-22.n4154.xyz/36568427.m3u8
-#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="FOOTBALL" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" tvg-type="2" group-title="FOOTBALL",PERSAK KEBUMEN vs PERSIBAS BANYUMAS (INDONESIA LIGA 4)
-https://e4-22.n4154.xyz/36568435.m3u8
-#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="FOOTBALL" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" tvg-type="2" group-title="FOOTBALL",PERSENGA NGANJUK vs PERSID JEMBER (INDONESIA LIGA 4)
-https://e1-22.n4154.xyz/36568465.m3u8
-#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="FOOTBALL" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" tvg-type="2" group-title="FOOTBALL",PERSIBANGGA PURBALINGGA vs PERSIK KENDAL (INDONESIA LIGA 4)
-https://e4-22.n4154.xyz/36568471.m3u8
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="FOOTBALL" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" tvg-type="2" group-title="FOOTBALL",SYDNEY FC [W] vs BRISBANE ROAR [W] (AUSTRALIA - A-LEAGUE (W))
 https://e2-22.n4154.xyz/36568641.m3u8
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="FOOTBALL" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" tvg-type="2" group-title="FOOTBALL",SHUKTARA JUBO SANGSAD vs WARI CLUB (BANGLADESH LIGUE 2)
@@ -46,64 +36,72 @@ https://e1-22.n4154.xyz/36569371.m3u8
 https://e4-22.n4154.xyz/36569395.m3u8
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="FOOTBALL" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" tvg-type="2" group-title="FOOTBALL",DARA 90 GROUP vs NAWASHER ABBOTABAD (PAKISTAN RSO LEAGUE)
 https://e4-22.n4154.xyz/36569409.m3u8
-#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="FOOTBALL" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" tvg-type="2" group-title="FOOTBALL",HANTARVADI YUNAYTED vs ISPE (HANTARVADI YUNAYTED - ISPE)
+#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="FOOTBALL" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" tvg-type="2" group-title="FOOTBALL",HANTHARWADY UNITED vs ISPE (MYANMAR NATIONAL LEAGUE)
 https://e3-22.n4154.xyz/36569453.m3u8
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="FOOTBALL" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" tvg-type="2" group-title="FOOTBALL",BIDHANNAGAR MSA U21 vs MOHUN BAGAN SG U21 ( INDIA U21 DEVELOPMENT LEAGUE)
 https://e4-22.n4154.xyz/36569483.m3u8
 #EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="FOOTBALL" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" tvg-type="2" group-title="FOOTBALL",NEPAL 19 (W) vs BANGLADESH 19 (W) (SAFF CHAMPIONSHIP U19 WOMEN)
 https://e3-22.n4154.xyz/36569499.m3u8
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="BASKETBALL" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" tvg-type="2" group-title="BASKETBALL",DOCKERS UNITED vs ATLETIK BASKET (BSKT CUP)
-https://e1-22.n4154.xyz/36568437.m3u8
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="BASKETBALL" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" tvg-type="2" group-title="BASKETBALL",AL HALA (WOMEN) vs AL (ARAB TOURNAMENT. WOMEN)
-https://e3-22.n4154.xyz/36568631.m3u8
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="BASKETBALL" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" tvg-type="2" group-title="BASKETBALL",EAGLES vs HAWKS (BSKT CUP)
-https://e3-22.n4154.xyz/36568769.m3u8
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="BASKETBALL" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" tvg-type="2" group-title="BASKETBALL",LAKELAND vs DRIVE (IPBL. PRIME DIVISION)
-https://e4-22.n4154.xyz/36568771.m3u8
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="BASKETBALL" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" tvg-type="2" group-title="BASKETBALL",TIGERS (WOMEN) vs SHARKS (WOMEN) (IPBL. PRIME DIVISION. WOMEN)
-https://e3-22.n4154.xyz/36568817.m3u8
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="BASKETBALL" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" tvg-type="2" group-title="BASKETBALL",MOSTODONS FB vs GUNNERS FB (FROSTBALL)
-https://e4-22.n4154.xyz/36568837.m3u8
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="BASKETBALL" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" tvg-type="2" group-title="BASKETBALL",NOVOKUZNETSK (WOMEN) vs BRYANSK (WOMEN) (IPBL. PRO DIVISION. WOMEN)
-https://e2-22.n4154.xyz/36569031.m3u8
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="BASKETBALL" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" tvg-type="2" group-title="BASKETBALL",NOVOSIBIRSK vs SOCHI (IPBL. PRO DIVISION)
-https://e4-22.n4154.xyz/36569135.m3u8
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="BASKETBALL" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" tvg-type="2" group-title="BASKETBALL",ALLIGATORS vs TIGERS (BSKT CUP)
-https://e4-22.n4154.xyz/36569147.m3u8
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="BASKETBALL" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" tvg-type="2" group-title="BASKETBALL",NS ROCKETS vs BALKANIYA BASKET (BSKT CUP)
-https://e1-22.n4154.xyz/36569181.m3u8
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="BASKETBALL" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" tvg-type="2" group-title="BASKETBALL",TAIPANS vs FIRE SHOT (PREMIER LEAGUE)
-https://e2-22.n4154.xyz/36569231.m3u8
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="BASKETBALL" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" tvg-type="2" group-title="BASKETBALL",LOCOMOTIVE vs YENISEI (PREMIER LEAGUE A)
-https://e3-22.n4154.xyz/36569233.m3u8
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="BASKETBALL" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" tvg-type="2" group-title="BASKETBALL",MAYKOP vs NALCHIK (IPBL. PRO DIVISION)
-https://e2-22.n4154.xyz/36569327.m3u8
-#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",PETR MICHNEV vs MIKALAI HALIAK (UTR OLOMOUC)
-https://e3-22.n4154.xyz/36568499.m3u8
-#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",PATRICIO ALVARADO vs ANTON ARZHANKIN (UTR DUBAI)
-https://e3-22.n4154.xyz/36568509.m3u8
-#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",ANNA MILEEVA vs ELENA ORLOVA (ATT. MOSCOW. WOMEN)
-https://e3-22.n4154.xyz/36568557.m3u8
-#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",VADYM KONOVCHUK vs ANDREA MCHICH (UTR DUBAI)
-https://e4-22.n4154.xyz/36568709.m3u8
-#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",JULIA TERZIYSKA vs STYLIANI ROUSSOPOULO (UTR BELGRADE WOMEN)
-https://e1-22.n4154.xyz/36568737.m3u8
-#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",ELIAKIM COULIBALY vs YASSINE SMIEJ (ITF - MONASTIR (M))
-https://e1-22.n4154.xyz/36568839.m3u8
-#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",MATTEO SCIAHBASI vs DIMITRIS SAKELLARIDIS (ITF - MONASTIR (M))
-https://e2-22.n4154.xyz/36568841.m3u8
-#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",LACHLAN VICKERY vs EWEN LUMSDEN (ITF - MONASTIR (M))
-https://e3-22.n4154.xyz/36568847.m3u8
-#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",OCTAVE CAILLAT vs TIMEO TRUFELLI (ITF - MONASTIR (M))
-https://e2-22.n4154.xyz/36568853.m3u8
+#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="FOOTBALL" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" tvg-type="2" group-title="FOOTBALL",PEERLESS vs DMSF CKP (ALL INDIA TOURNAMENT)
+https://e1-22.n4154.xyz/36569559.m3u8
+#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="FOOTBALL" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" tvg-type="2" group-title="FOOTBALL",AHBAB vs DREAM TEAM DELHI (INDIA DELHI PREMIER LEAGUE)
+https://e2-22.n4154.xyz/36569585.m3u8
+#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="FOOTBALL" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" tvg-type="2" group-title="FOOTBALL",BOLUSPOR vs ALANYASPOR (TURKEY - CUP)
+https://e4-22.n4154.xyz/36569777.m3u8
+#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="FOOTBALL" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" tvg-type="2" group-title="FOOTBALL",DHANUSHA 11 vs BIRJUNG UNITED PARSA (NEPAL GOLD CUP)
+https://e4-22.n4154.xyz/36569829.m3u8
+#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="FOOTBALL" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" tvg-type="2" group-title="FOOTBALL",SHAGGAR CITY vs MIDRE GENET SHIRE (ETHIOPIA. PREMIER LEAGUE)
+https://e2-22.n4154.xyz/36569835.m3u8
+#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="FOOTBALL" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" tvg-type="2" group-title="FOOTBALL",CSA STEAUA vs CS DINAMO BUCUREȘTI (CLUB FRIENDLIES)
+https://e1-22.n4154.xyz/36569975.m3u8
+#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="FOOTBALL" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" tvg-type="2" group-title="FOOTBALL",YOUNG CHAMPS U21 vs GOA U21 (INDIA RDFL U21)
+https://e3-22.n4154.xyz/36569997.m3u8
+#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="FOOTBALL" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" tvg-type="2" group-title="FOOTBALL",PLAYMORE FA vs DE ELITE FA (CLUB FRIENDLIES)
+https://e3-22.n4154.xyz/36570047.m3u8
+#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="FOOTBALL" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" tvg-type="2" group-title="FOOTBALL",REAL CHIKKAMAGALURU vs SNIPERS (INDIA BANGALORE DIVISION)
+https://e4-22.n4154.xyz/36570049.m3u8
+#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-name="FOOTBALL" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" tvg-type="2" group-title="FOOTBALL",KOLOS KOVALIVKA II vs LNZ CHERKASY U19 (OLEG MAKAROV MEMORIAL TOURNAMENT)
+https://e1-22.n4154.xyz/36570101.m3u8
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="BASKETBALL" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" tvg-type="2" group-title="BASKETBALL",JINAN CYCLONES vs XI'AN LEGENDS (CHINA. CDBL)
+https://e1-22.n4154.xyz/36569653.m3u8
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="BASKETBALL" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" tvg-type="2" group-title="BASKETBALL",MAD ANTS vs DRIVE (IPBL. PRIME DIVISION)
+https://e2-22.n4154.xyz/36569659.m3u8
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="BASKETBALL" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" tvg-type="2" group-title="BASKETBALL",LADY BULLDOGS (WOMEN) vs SHARKS (WOMEN) (IPBL. PRIME DIVISION. WOMEN)
+https://e2-22.n4154.xyz/36569741.m3u8
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="BASKETBALL" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" tvg-type="2" group-title="BASKETBALL",MAGNITOGORSK (WOMEN) vs IZHEVSK (WOMEN) (IPBL. PRO DIVISION. WOMEN)
+https://e1-22.n4154.xyz/36569751.m3u8
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="BASKETBALL" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" tvg-type="2" group-title="BASKETBALL",GOYANG SKY GUNNERS vs BUSAN KCC EGIS (KOREA - BASKETBALL LEAGUE)
+https://e4-22.n4154.xyz/36569813.m3u8
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="BASKETBALL" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" tvg-type="2" group-title="BASKETBALL",ST. PETERSBURG vs SOCHI (IPBL. PRO DIVISION)
+https://e1-22.n4154.xyz/36569815.m3u8
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="BASKETBALL" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" tvg-type="2" group-title="BASKETBALL",LA CLIPPERS (ANDRIK) vs NY KNICKS (LALKOFF) (EBASKETBALL BATTLE)
+https://e1-22.n4154.xyz/36569869.m3u8
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="BASKETBALL" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" tvg-type="2" group-title="BASKETBALL",YONGIN SAMSUNG BLUEMINX [W] vs KEB HANA [W] (KOREA - BASKETBALL LEAGUE (W))
+https://e2-22.n4154.xyz/36569877.m3u8
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="BASKETBALL" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" tvg-type="2" group-title="BASKETBALL",VULTURES vs HAWKS (BSKT CUP)
+https://e3-22.n4154.xyz/36569889.m3u8
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="BASKETBALL" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" tvg-type="2" group-title="BASKETBALL",PLATOV ROSTOV vs ON (WOMEN) (RUSSIA. HIGHER LEAGUE. WOMEN)
+https://e1-22.n4154.xyz/36570003.m3u8
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="BASKETBALL" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" tvg-type="2" group-title="BASKETBALL",KHORFAKKAN (WOMEN) vs GHAZ AL (ARAB TOURNAMENT. WOMEN)
+https://e1-22.n4154.xyz/36570011.m3u8
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="BASKETBALL" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" tvg-type="2" group-title="BASKETBALL",ACES vs DYIP (PREMIER LEAGUE)
+https://e3-22.n4154.xyz/36570067.m3u8
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="BASKETBALL" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" tvg-type="2" group-title="BASKETBALL",BELGOROD vs SARATOV (IPBL. PRO DIVISION)
+https://e1-22.n4154.xyz/36570083.m3u8
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="BASKETBALL" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" tvg-type="2" group-title="BASKETBALL",TOYOTA ALVARK TOKYO vs NEW TAIPEI KINGS (EAST ASIA SUPER LEAGUE)
+https://e3-22.n4154.xyz/36570097.m3u8
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="BASKETBALL" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" tvg-type="2" group-title="BASKETBALL",NS ROCKETS vs OLIMPIYA NS (BSKT CUP)
+https://e4-22.n4154.xyz/36570165.m3u8
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="BASKETBALL" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" tvg-type="2" group-title="BASKETBALL",SPARTACUS vs PASE (PREMIER LEAGUE A)
+https://e1-22.n4154.xyz/36570195.m3u8
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-name="BASKETBALL" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" tvg-type="2" group-title="BASKETBALL",GUNNERS FB vs SHOOTERS FB (FROSTBALL)
+https://e1-22.n4154.xyz/36570207.m3u8
 #EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",XINYU WANG vs REBEKA MASAROVA (WTA - CLUJ-NAPOCA)
 https://e1-22.n4154.xyz/36569027.m3u8
 #EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",ERJAVEC / RAKOTOMANGA RAJAONAH vs JAKUPOVIC / N. RADISIC (WTA DOUBLES - CLUJ-NAPOCA)
 https://e4-22.n4154.xyz/36569035.m3u8
 #EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",MARSHALL TUTU vs DANIEL SALAZAR (UTR DUBAI)
 https://e1-22.n4154.xyz/36569039.m3u8
-#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",DAYANA YASTREMSKA vs EKATERINA ALEXANDROVA (WTA - ABU DHABI)
-https://e3-22.n4154.xyz/36569089.m3u8
 #EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",KHROMACHEVA / KLEPAC vs MIHALIKOVA / NICHOLLS (WTA DOUBLES - ABU DHABI)
 https://e3-22.n4154.xyz/36569101.m3u8
 #EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",BEKHAN ATLANGERIEV vs STEFFAN VAN WELDAM (UTR OLOMOUC)
@@ -112,114 +110,164 @@ https://e2-22.n4154.xyz/36569241.m3u8
 https://e3-22.n4154.xyz/36569247.m3u8
 #EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",ASTRID CIROTTE vs SADA NAHIMANA (ITF - ANDREZIEUX-BOUTHEON (W))
 https://e4-22.n4154.xyz/36569299.m3u8
-#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",MAI HONTAMA vs DARJA SEMENISTAJA (12:30)
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",MAI HONTAMA vs DARJA SEMENISTAJA (WTA - MUMBAI)
 https://e2-22.n4154.xyz/36569497.m3u8
-#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",MEI YAMAGUCHI vs YASMINE KABBAJ (12:30)
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",MEI YAMAGUCHI vs YASMINE KABBAJ (WTA - MUMBAI)
 https://e4-22.n4154.xyz/36569501.m3u8
-#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",SENICH N vs MIKACHA S (12:20  ZHENSHTINI)
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",NATALIJA SENIC vs SARA MIKACA (UTR BELGRADE WOMEN)
 https://e2-22.n4154.xyz/36569505.m3u8
-#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-name="ICE HOCKEY" tvg-logo="https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg" tvg-type="2" group-title="ICE HOCKEY",MOSCOW STARS (AMATEUR) vs PETERSBURG LIONS (AMATEUR) (DREAM LEAGUE)
-https://e4-22.n4154.xyz/36568819.m3u8
-#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-name="ICE HOCKEY" tvg-logo="https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg" tvg-type="2" group-title="ICE HOCKEY",CITY DEVILS vs FIRST FLYERS (3HL LEAGUE)
-https://e1-22.n4154.xyz/36568965.m3u8
-#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-name="ICE HOCKEY" tvg-logo="https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg" tvg-type="2" group-title="ICE HOCKEY",APACHE EAST vs DRAGONS (RUSSIA. MNHL)
-https://e2-22.n4154.xyz/36569061.m3u8
-#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-name="ICE HOCKEY" tvg-logo="https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg" tvg-type="2" group-title="ICE HOCKEY",AKULY KALININGRAD vs AVIATOR SMOLENSK (RHL)
-https://e3-22.n4154.xyz/36569079.m3u8
-#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-name="ICE HOCKEY" tvg-logo="https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg" tvg-type="2" group-title="ICE HOCKEY",BAD COMPANY vs DREAM CHASERS (3HL LEAGUE)
-https://e3-22.n4154.xyz/36569185.m3u8
-#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-name="ICE HOCKEY" tvg-logo="https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg" tvg-type="2" group-title="ICE HOCKEY",LEDOVYE SPARTANTCY vs SVIREPYE EJI (TOURNAMENT MAGNITKA OPEN)
-https://e1-22.n4154.xyz/36569215.m3u8
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",ADAM NOVOTNY vs PETR VOJTECH (UTR OLOMOUC)
+https://e4-22.n4154.xyz/36569601.m3u8
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",MICHELE MECARELLI vs FEDERICO IANNACCONE (CHALLENGER CESENATICO)
+https://e4-22.n4154.xyz/36569749.m3u8
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",MARKUS MALASZSZAK vs CHRISTOPHER PAPA (ITF - MONASTIR (M))
+https://e2-22.n4154.xyz/36569753.m3u8
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",WESTPHAL/WINEGAR vs FOMIN/GOLUBEV (CHALLENGER TENERIFE MD)
+https://e2-22.n4154.xyz/36569791.m3u8
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",GABRIELE PIRAINO vs STEFANO TRAVAGLIA (CHALLENGER - TENERIFE)
+https://e4-22.n4154.xyz/36569799.m3u8
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",JUSTIN LENDERS vs SHAOYUN LIU (ITF - MONASTIR (M))
+https://e4-22.n4154.xyz/36569845.m3u8
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",TAMARA KORPATSCH vs EMILIANA ARANGO (WTA - OSTRAVA)
+https://e1-22.n4154.xyz/36569851.m3u8
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",TOMASZ BERKIETA vs SAMIR HAMZA REGUIG (ITF - MONASTIR (M))
+https://e2-22.n4154.xyz/36569859.m3u8
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",JERRY RODDICK vs MAXIME CHAZAL (ITF - MONASTIR (M))
+https://e3-22.n4154.xyz/36569925.m3u8
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",CHARLES CHEN vs LUCA PARENTI (ITF - SHEFFIELD (M))
+https://e3-22.n4154.xyz/36569941.m3u8
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",AYLA AKSU vs ANGELA FITA BOLUDA (ITF - PORTO (W))
+https://e2-22.n4154.xyz/36569953.m3u8
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",NEMANJA MALESEVIC vs DENIS CONSTANTIN SPIRIDON (ITF - SHEFFIELD (M))
+https://e4-22.n4154.xyz/36569959.m3u8
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",ELIZ MALONEY vs REBECCA MUNK MORTENSEN (ITF W35 SHEFFIELD)
+https://e1-22.n4154.xyz/36569963.m3u8
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",MARIA USTIC vs IAROSLAVA SVIATETCKAIA (UTR BELGRADE WOMEN)
+https://e2-22.n4154.xyz/36569969.m3u8
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",VALENTINA IVANOV vs VITTORIA PAGANETTI (ITF W35 SHEFFIELD)
+https://e3-22.n4154.xyz/36569971.m3u8
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",JOE LEATHER vs OLIVER OKONKWO (ITF - SHEFFIELD (M))
+https://e3-22.n4154.xyz/36569979.m3u8
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",LIDIA ENCHEVA vs ANGELINA VOLOSHCHUK (ITF - PORTO (W))
+https://e1-22.n4154.xyz/36569983.m3u8
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",MARIE VOGT vs KATY DUNNE (ITF W35 SHEFFIELD)
+https://e4-22.n4154.xyz/36570033.m3u8
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-name="TENNIS" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" tvg-type="2" group-title="TENNIS",SARA BEJLEK vs JELENA OSTAPENKO (13:30)
+https://e3-22.n4154.xyz/36570187.m3u8
 #EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-name="ICE HOCKEY" tvg-logo="https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg" tvg-type="2" group-title="ICE HOCKEY",AMUR KHABAROVSK vs TORPEDO NIZHNY NOVGOROD (KHL)
 https://e1-22.n4154.xyz/36569259.m3u8
-#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-name="ICE HOCKEY" tvg-logo="https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg" tvg-type="2" group-title="ICE HOCKEY",COLUMBUS BLUE JACKETS (POKE) vs BOSTON BRUINS (TRENT) (NHL 26. BLAST HOCKEY LEAGUE)
-https://e2-22.n4154.xyz/36569293.m3u8
-#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-name="ICE HOCKEY" tvg-logo="https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg" tvg-type="2" group-title="ICE HOCKEY",HEAVY HAMMERS vs BLOOD RAZORS (RUSSIA. MNHL)
-https://e4-22.n4154.xyz/36569333.m3u8
-#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-name="ICE HOCKEY" tvg-logo="https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg" tvg-type="2" group-title="ICE HOCKEY",DRAGONS vs SHERIFF (RUSSIA. MNHL)
-https://e1-22.n4154.xyz/36569397.m3u8
-#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-name="ICE HOCKEY" tvg-logo="https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg" tvg-type="2" group-title="ICE HOCKEY",ADMIRAL VLADIVOSTOK vs BARYS ASTANA (12:30)
+#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-name="ICE HOCKEY" tvg-logo="https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg" tvg-type="2" group-title="ICE HOCKEY",ADMIRAL VLADIVOSTOK vs BARYS ASTANA (KHL)
 https://e1-22.n4154.xyz/36569441.m3u8
-#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-name="ICE HOCKEY" tvg-logo="https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg" tvg-type="2" group-title="ICE HOCKEY",COMETA IRKUTSK vs LEGION BARNAUL (RHL)
-https://e1-22.n4154.xyz/36569531.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",ALEXANDER GUSAREVICH vs XING HANWEI (MASTERS. SUPER LEAGUE)
-https://e2-22.n4154.xyz/36568995.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",ARKADIUSZ SWITALA vs KRZYSZTOF RUSZCZYNSKI (MASTERS. POLAND)
-https://e4-22.n4154.xyz/36569013.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",ALEKSANDAR ZINOVJEV vs YURI OBEREMOK (MASTERS. RUSSIA)
-https://e4-22.n4154.xyz/36569069.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",VIKTOR LYASHENKO vs MALEK AL (MASTERS. RUSSIA)
-https://e1-22.n4154.xyz/36569113.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",MANUEL ALMEIDA JUAREZ vs MIGUEL TORTOSA MURCIANO (MASTERS. SPAIN)
-https://e3-22.n4154.xyz/36569133.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",OREST GURA vs ALEKSEY MITLA (SETKA CUP)
-https://e3-22.n4154.xyz/36569175.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",ANASTASIA SHEVCHUK vs SOFYA KOZLOVA (MASTERS. RUSSIA. WOMEN)
-https://e4-22.n4154.xyz/36569179.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",MAKSIM STETSENKO vs IGORY BURAK (SETKA CUP)
-https://e1-22.n4154.xyz/36569189.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",LESZEK KUCYRKA vs SLAWOMIR KUKKUK (MASTERS. POLAND)
-https://e2-22.n4154.xyz/36569197.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",NIKITA KONOVALOV vs PLATON POBEGAILO (MASTERS. RUSSIA)
-https://e3-22.n4154.xyz/36569201.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",VITALY KRIVONOGOV vs SERGEY FILCHEV (MASTERS. SUPER LEAGUE)
-https://e3-22.n4154.xyz/36569223.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",YURIY VOLKOV vs BOGDAN ZAIKA (SETKA CUP)
-https://e4-22.n4154.xyz/36569255.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",LUKASZ NADOLNY vs MICHAL DERESCEVSKY (MASTERS. POLAND)
-https://e4-22.n4154.xyz/36569281.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",NIKITA ZINOV vs VLADIMIR SAVOLYUK (SETKA CUP)
-https://e1-22.n4154.xyz/36569311.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",SERGEI GAVRILOV vs ANDREY GRITS (MASTERS. BELARUS)
-https://e3-22.n4154.xyz/36569329.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",IGOR SHKROBOT vs ANDREY NIKONCHUK (MASTERS. BELARUS)
-https://e1-22.n4154.xyz/36569383.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",ALBERTO GIL CANO vs MARIO HIDALGO GUTIERREZ (MASTERS. SPAIN)
-https://e2-22.n4154.xyz/36569401.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",SVYATOSLAV URAZOV vs VASILY LAKEEV (MASTERS. SUPER LEAGUE)
-https://e3-22.n4154.xyz/36569405.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",OLGA VISHNIAKOVA vs REGINA KIM (MASTERS. SUPER LEAGUE. WOMEN)
-https://e1-22.n4154.xyz/36569419.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",IVAN PITSKO vs DENIS MALYTSEV (SETKA CUP)
-https://e2-22.n4154.xyz/36569425.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",NORBERT PLACHTA vs JUSTYN MILEWSKI (MASTERS. POLAND)
-https://e3-22.n4154.xyz/36569437.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",ONDREY KADERABEK vs VOYTEH GRUBR (SETKA CUP)
-https://e2-22.n4154.xyz/36569451.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",VIKTOR ZYAKUN vs SERGEY PRYADKO (SETKA CUP)
-https://e1-22.n4154.xyz/36569463.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",DANIIL FEDOROV vs IGOR ELISTRATOV (MASTERS. SUPER LEAGUE)
-https://e2-22.n4154.xyz/36569467.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",ANATOLIY LISIY vs ROMAN SVESHNIKOV (SETKA CUP)
-https://e3-22.n4154.xyz/36569469.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",EGOR KOLESNIKOV vs VIKTOR MANSUROV (MASTERS. RUSSIA)
-https://e1-22.n4154.xyz/36569495.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",SAMVEL GYURJYAN vs ARSENIY KSENDZOV (MASTERS. BELARUS)
-https://e4-22.n4154.xyz/36569537.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",LI SHUAN (KIT) vs TSAO TSI CHZHUAN (KIT) (MASTERS)
-https://e1-22.n4154.xyz/36569543.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",OLEG STYOPIN vs DANIIL NOVAKOV (12:30 UKRAINA)
-https://e2-22.n4154.xyz/36569547.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",VITALIY CHEPKASOV (ROS) vs PAVEL PULYNIY (ROS) (MASTERS)
-https://e3-22.n4154.xyz/36569549.m3u8
+#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-name="ICE HOCKEY" tvg-logo="https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg" tvg-type="2" group-title="ICE HOCKEY",CHEREPOVETS DIAMONDS (AMATEUR) vs KAZAN LEOPARDS (AMATEUR) (DREAM LEAGUE)
+https://e1-22.n4154.xyz/36569693.m3u8
+#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-name="ICE HOCKEY" tvg-logo="https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg" tvg-type="2" group-title="ICE HOCKEY",LOS ANGELES KINGS (HOWDK) vs COLUMBUS BLUE JACKETS (POKE) (NHL 26. BLAST HOCKEY LEAGUE)
+https://e1-22.n4154.xyz/36569929.m3u8
+#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-name="ICE HOCKEY" tvg-logo="https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg" tvg-type="2" group-title="ICE HOCKEY",SKYHAWKS vs STEEL AXES (RUSSIA. MNHL)
+https://e2-22.n4154.xyz/36569977.m3u8
+#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-name="ICE HOCKEY" tvg-logo="https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg" tvg-type="2" group-title="ICE HOCKEY",KRYLYA SAMARA vs VITYAZ TOMSK (RHL)
+https://e2-22.n4154.xyz/36569985.m3u8
+#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-name="ICE HOCKEY" tvg-logo="https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg" tvg-type="2" group-title="ICE HOCKEY",WHITE BRUINS vs CITY DEVILS (3HL LEAGUE)
+https://e1-22.n4154.xyz/36570035.m3u8
+#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-name="ICE HOCKEY" tvg-logo="https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg" tvg-type="2" group-title="ICE HOCKEY",WILD VIKINGS vs GLADIATORS (RUSSIA. MNHL)
+https://e4-22.n4154.xyz/36570081.m3u8
+#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-name="ICE HOCKEY" tvg-logo="https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg" tvg-type="2" group-title="ICE HOCKEY",BLOOD JOKERS vs BAD COMPANY (3HL LEAGUE)
+https://e1-22.n4154.xyz/36570121.m3u8
+#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-name="ICE HOCKEY" tvg-logo="https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg" tvg-type="2" group-title="ICE HOCKEY",AKULY KALININGRAD vs RYSI KAZAN (RHL)
+https://e1-22.n4154.xyz/36570169.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",EDUARDO PEREZ MOYA vs ANTONIO CISNEROS FERNANDEZ (MASTERS. SPAIN)
+https://e2-22.n4154.xyz/36569721.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",ALEKSEY GADZHULA vs VASILIY MOSHOVSKIY (SETKA CUP)
+https://e3-22.n4154.xyz/36569747.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",ANTON GUMAROV vs KONSTANTIN GRAMOVICH (MASTERS. BELARUS)
+https://e1-22.n4154.xyz/36569783.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",SERGEY GONCHARENKO vs VASILIY MATVIYCHUK (SETKA CUP)
+https://e2-22.n4154.xyz/36569833.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",KARINA IUSUPOVA vs ALFIYA YUNUSOVA (MASTERS. SUPER LEAGUE. WOMEN)
+https://e3-22.n4154.xyz/36569837.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",ANATOLIY KOVALENKO vs ANDREY TROYAN (SETKA CUP)
+https://e1-22.n4154.xyz/36569885.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",SERGEY YACENKO vs VITALY CHEPKASOV (MASTERS. RUSSIA)
+https://e4-22.n4154.xyz/36569927.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",MALEK AL vs ZZI (MASTERS. RUSSIA)
+https://e3-22.n4154.xyz/36569957.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",REGINA KIM vs DARYA MIKHAYLOVA (MASTERS. SUPER LEAGUE. WOMEN)
+https://e4-22.n4154.xyz/36569973.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",VIKTOR MANSUROV vs EMIL NASYROV (MASTERS. RUSSIA)
+https://e4-22.n4154.xyz/36569999.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",IVAN PISHCHEIKO vs DMITRY KISELEV (MASTERS. BELARUS)
+https://e3-22.n4154.xyz/36570007.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",VASILY POLYAKOV vs DANIIL FEDOROV (MASTERS. SUPER LEAGUE)
+https://e4-22.n4154.xyz/36570009.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",ARKADIUSZ SWITALA vs JAKUB KONIECZNY (MASTERS. POLAND)
+https://e2-22.n4154.xyz/36570015.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",ALEXANDER GUSAREVICH vs MIKHAIL TSYGANOVSKY (MASTERS. SUPER LEAGUE)
+https://e3-22.n4154.xyz/36570017.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",MARIO HIDALGO GUTIERREZ vs JULIAN CRUZ (MASTERS. SPAIN)
+https://e4-22.n4154.xyz/36570019.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",VLADIMIR SAVOLYUK vs ARTEM YURKOV (SETKA CUP)
+https://e2-22.n4154.xyz/36570023.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",JUSTYN MILEWSKI vs BARTOSZ LEBRECHT (MASTERS. POLAND)
+https://e3-22.n4154.xyz/36570025.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",DENIS KUPRIENKO vs ALEKSANDAR ZINOVJEV (MASTERS. RUSSIA)
+https://e2-22.n4154.xyz/36570037.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",ZHOU HUA vs ZHAO ZHI QIANG (MASTERS. CHINA)
+https://e1-22.n4154.xyz/36570051.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",GLEB RADIONOV vs PLATON POBEGAILO (MASTERS. RUSSIA)
+https://e2-22.n4154.xyz/36570055.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",ANDREY GRITS vs ALEXANDER PROKOPENKO (MASTERS. BELARUS)
+https://e1-22.n4154.xyz/36570075.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",ANTON SHIPILOV vs VALERIY VLASENKO (13:35 UKRAINA)
+https://e3-22.n4154.xyz/36570113.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",LI JIN XU vs CHEN MUO (MASTERS. CHINA)
+https://e4-22.n4154.xyz/36570119.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",EVGENY PAVLOV vs ALEXANDER CHERNOKNIZHNIKOV (MASTERS. RUSSIA)
+https://e3-22.n4154.xyz/36570125.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",VASILY LAKEEV vs SVYATOSLAV URAZOV (MASTERS. SUPER LEAGUE)
+https://e1-22.n4154.xyz/36570135.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",OLEG STYOPIN vs OLEG PONOMARENKO (13:30 UKRAINA)
+https://e1-22.n4154.xyz/36570151.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",IVAN PITSKO vs YAROSLAV TEBENYKO (13:25 UKRAINA)
+https://e2-22.n4154.xyz/36570155.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",MIHAL SNIZHEK vs MARTIN GOLUB (13:15 CHEHIYA)
+https://e3-22.n4154.xyz/36570163.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",VIKTOR ZYAKUN vs IGORY TORGACHIOV (13:30 UKRAINA)
+https://e2-22.n4154.xyz/36570185.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",ANATOLIY LISIY vs DMITRIY NOVIK (13:30 UKRAINA)
+https://e4-22.n4154.xyz/36570193.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",ONDRZHEY CHADIMA vs TADEASH BERTO (13:30 CHEHIYA)
+https://e2-22.n4154.xyz/36570197.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",KRYSTIAN SZAJEWSKI vs ROBERT STOLARSKI (MASTERS. POLAND)
+https://e3-22.n4154.xyz/36570199.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="TABLE TENNIS" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" tvg-type="2" group-title="TABLE TENNIS",ALEKSANDR GOROCHNY vs VITALY KRIVONOGOV (MASTERS. SUPER LEAGUE)
+https://e4-22.n4154.xyz/36570205.m3u8
 #EXTINF:-1 tvg-id="Volleyball.Dummy.us" tvg-name="VOLLEYBALL" tvg-logo="https://www.sidasturkiye.com/images/aktiviteler/alt-aktiviteler_voleybol4.jpg" tvg-type="2" group-title="VOLLEYBALL",RMUTT (WOMEN) vs 3BB NAKHONNONT (WOMEN) (THAILAND CHAMPIONSHIP. WOMEN)
 https://e4-22.n4154.xyz/36568635.m3u8
-#EXTINF:-1 tvg-id="Volleyball.Dummy.us" tvg-name="VOLLEYBALL" tvg-logo="https://www.sidasturkiye.com/images/aktiviteler/alt-aktiviteler_voleybol4.jpg" tvg-type="2" group-title="VOLLEYBALL",VILAVELHENSE AJAX (WOMEN) vs METROPOLIS ELITE (WOMEN) (UPVL. A1. WOMEN)
-https://e2-22.n4154.xyz/36568831.m3u8
-#EXTINF:-1 tvg-id="Volleyball.Dummy.us" tvg-name="VOLLEYBALL" tvg-logo="https://www.sidasturkiye.com/images/aktiviteler/alt-aktiviteler_voleybol4.jpg" tvg-type="2" group-title="VOLLEYBALL",SKYFORCE HORNETS vs COLLINS BUCKS (UPVL. A1)
-https://e1-22.n4154.xyz/36568937.m3u8
 #EXTINF:-1 tvg-id="Volleyball.Dummy.us" tvg-name="VOLLEYBALL" tvg-logo="https://www.sidasturkiye.com/images/aktiviteler/alt-aktiviteler_voleybol4.jpg" tvg-type="2" group-title="VOLLEYBALL",ARELLANO UNIVERSITY CHIEFS vs EMILIO AGUINALDO COLLEGE GENERALS (PHILIPPINES. NCAA)
 https://e1-22.n4154.xyz/36569137.m3u8
 #EXTINF:-1 tvg-id="Volleyball.Dummy.us" tvg-name="VOLLEYBALL" tvg-logo="https://www.sidasturkiye.com/images/aktiviteler/alt-aktiviteler_voleybol4.jpg" tvg-type="2" group-title="VOLLEYBALL",MALAHIT vs RO (WOMEN) (RUSSIA. LEAGUE PRO. WOMEN)
 https://e3-22.n4154.xyz/36569143.m3u8
 #EXTINF:-1 tvg-id="Volleyball.Dummy.us" tvg-name="VOLLEYBALL" tvg-logo="https://www.sidasturkiye.com/images/aktiviteler/alt-aktiviteler_voleybol4.jpg" tvg-type="2" group-title="VOLLEYBALL",DYNAMO ACADEMIA MOSCOW (W) vs MINCHANKA II (W) (RUSSIAN YOUTH LEAGUE. WOMEN)
 https://e1-22.n4154.xyz/36569503.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="BADMINTON" tvg-logo="https://sporium.net/wp-content/uploads/2017/12/badminton-malatya-il-sampiyonasi-9178452_8314_o.jpg" tvg-type="2" group-title="BADMINTON",TAE BIN YOO vs CHEUK YIU LEE (ASIA TEAM CHAMPIONSHIPS)
-https://e1-22.n4154.xyz/36569229.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="BADMINTON" tvg-logo="https://sporium.net/wp-content/uploads/2017/12/badminton-malatya-il-sampiyonasi-9178452_8314_o.jpg" tvg-type="2" group-title="BADMINTON",FLORA WANG vs MIKAELA JOY DE GUZMAN (AZERBAIJAN INT WOMEN)
-https://e4-22.n4154.xyz/36569379.m3u8
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="BADMINTON" tvg-logo="https://sporium.net/wp-content/uploads/2017/12/badminton-malatya-il-sampiyonasi-9178452_8314_o.jpg" tvg-type="2" group-title="BADMINTON",NAVYA KANDERI vs HELI NEIMAN (AZERBAIJAN INT WOMEN)
-https://e3-22.n4154.xyz/36569507.m3u8
+#EXTINF:-1 tvg-id="Volleyball.Dummy.us" tvg-name="VOLLEYBALL" tvg-logo="https://www.sidasturkiye.com/images/aktiviteler/alt-aktiviteler_voleybol4.jpg" tvg-type="2" group-title="VOLLEYBALL",AIR FALCONS vs CHINATOWN VC (UPVL. A1)
+https://e4-22.n4154.xyz/36569619.m3u8
+#EXTINF:-1 tvg-id="Volleyball.Dummy.us" tvg-name="VOLLEYBALL" tvg-logo="https://www.sidasturkiye.com/images/aktiviteler/alt-aktiviteler_voleybol4.jpg" tvg-type="2" group-title="VOLLEYBALL",AI PEPPERS GWANGJU (W) AI PEPPERS GWANGJU (W) vs HYUNDAI (W) (KOREA KOVO WOMEN)
+https://e2-22.n4154.xyz/36569699.m3u8
+#EXTINF:-1 tvg-id="Volleyball.Dummy.us" tvg-name="VOLLEYBALL" tvg-logo="https://www.sidasturkiye.com/images/aktiviteler/alt-aktiviteler_voleybol4.jpg" tvg-type="2" group-title="VOLLEYBALL",ANSAN OK FINANCIAL GROUP vs KB STARS (KOREA KOVO)
+https://e1-22.n4154.xyz/36569831.m3u8
+#EXTINF:-1 tvg-id="Volleyball.Dummy.us" tvg-name="VOLLEYBALL" tvg-logo="https://www.sidasturkiye.com/images/aktiviteler/alt-aktiviteler_voleybol4.jpg" tvg-type="2" group-title="VOLLEYBALL",LENINGRADKA II (WOMEN) vs DYNAMO METAR III (WOMEN) (RUSSIAN CHAMPIONSHIP. YOUTH LEAGUE. WOMEN)
+https://e4-22.n4154.xyz/36569867.m3u8
+#EXTINF:-1 tvg-id="Volleyball.Dummy.us" tvg-name="VOLLEYBALL" tvg-logo="https://www.sidasturkiye.com/images/aktiviteler/alt-aktiviteler_voleybol4.jpg" tvg-type="2" group-title="VOLLEYBALL",GALATASARAY ISTANBUL vs ISTANBUL BB SK (TURKISH CUP)
+https://e4-22.n4154.xyz/36569883.m3u8
+#EXTINF:-1 tvg-id="Volleyball.Dummy.us" tvg-name="VOLLEYBALL" tvg-logo="https://www.sidasturkiye.com/images/aktiviteler/alt-aktiviteler_voleybol4.jpg" tvg-type="2" group-title="VOLLEYBALL", vs  (13:00)
+https://e4-22.n4154.xyz/36570099.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="BADMINTON" tvg-logo="https://sporium.net/wp-content/uploads/2017/12/badminton-malatya-il-sampiyonasi-9178452_8314_o.jpg" tvg-type="2" group-title="BADMINTON",SAKSHI KURBKHELGI vs JULIE FRANCONVILLE (AZERBAIJAN INT WOMEN)
+https://e3-22.n4154.xyz/36569881.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="BADMINTON" tvg-logo="https://sporium.net/wp-content/uploads/2017/12/badminton-malatya-il-sampiyonasi-9178452_8314_o.jpg" tvg-type="2" group-title="BADMINTON",SREHTA KANNAREDDY vs HRISTOMIRA POPOVSKA (AZERBAIJAN INT WOMEN)
+https://e4-22.n4154.xyz/36569981.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="BADMINTON" tvg-logo="https://sporium.net/wp-content/uploads/2017/12/badminton-malatya-il-sampiyonasi-9178452_8314_o.jpg" tvg-type="2" group-title="BADMINTON",PARI vs  (KOMANDNIY CHEMPIONAT AZII)
+https://e2-22.n4154.xyz/36570089.m3u8
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="BADMINTON" tvg-logo="https://sporium.net/wp-content/uploads/2017/12/badminton-malatya-il-sampiyonasi-9178452_8314_o.jpg" tvg-type="2" group-title="BADMINTON",SATVIKSAIRAY RANKIREDDI (IND)/CHIRAG SHETTI (IND) vs DZHUNSUKE KUBO (SGR)/ENG KIT UIZLI KOH (SGR) (SATVIKSAIRAY RANKIREDDI (IND)/CHIRAG SHETTI (IND) - DZHUNSUKE KUBO (SGR)/ENG KIT UIZLI KOH (SGR))
+https://e2-22.n4154.xyz/36570103.m3u8
 #EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",SUI NORTHERN GAS vs OIL & GAS DEVELOPMENT (PAKISTAN PRESIDENTS CUP)
 https://e1-22.n4154.xyz/36566721.m3u8
 #EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",SK INFRA RMC vs PATEL KING WARRIORS (INDIA. LOKMAT APL)
@@ -230,8 +278,6 @@ https://e3-22.n4154.xyz/36567659.m3u8
 https://e4-22.n4154.xyz/36567667.m3u8
 #EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",INDIA U19 vs AFGHANISTAN U19 (WORLD CUP U19)
 https://e2-22.n4154.xyz/36567873.m3u8
-#EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",QUETTA RIDERS vs SCHOOL OF CRICKET BUREWALA (KARACHI CHALLENGE CUP)
-https://e2-22.n4154.xyz/36567977.m3u8
 #EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",ITANDA KAYAKERS vs KARUMA RAPIDS (UGANDA LEAGUE)
 https://e4-22.n4154.xyz/36567983.m3u8
 #EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",REVO vs ASANTHE CMB (SRI LANKA T10 PREMIER LEAGUE)
@@ -242,37 +288,47 @@ https://e2-22.n4154.xyz/36568163.m3u8
 https://e3-22.n4154.xyz/36568387.m3u8
 #EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",WARRIORS vs DP WORLD LIONS (4 DAY SERIES)
 https://e3-22.n4154.xyz/36568429.m3u8
-#EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",CHENNAI LIONS vs NITROS (CHENNAI DAILY CRICKET)
-https://e4-22.n4154.xyz/36568653.m3u8
 #EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",GAMMA PIZZA CRAFT vs SITREK GROUP (SRI LANKA MCA DIVISION F)
 https://e1-22.n4154.xyz/36568679.m3u8
 #EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",RANGE PANTHERS DEHRADUN vs PROMISING PAYJAL (INDIA. GST CHAMPIONSHIP)
 https://e3-22.n4154.xyz/36568697.m3u8
-#EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",ISLAMABAD FIGHTERS vs RAWALPINDI UNITED (GUJRAT DISTRICT CUP)
-https://e3-22.n4154.xyz/36568835.m3u8
 #EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",EMERCHEMIE NB vs POWER HAND PLANTATION B (SRI LANKA MCA DIVISION)
 https://e1-22.n4154.xyz/36568877.m3u8
 #EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",FRIENDS XI LANGATE vs GAZI (INDIA. KASHMIR LEAGUE)
 https://e1-22.n4154.xyz/36568993.m3u8
-#EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",RUHUNA CRICKET vs STUNNERS INDOOR (INDIA. INDOOR SERIES)
-https://e3-22.n4154.xyz/36569049.m3u8
 #EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",SMASHERS 11 vs SHRIRAMPUR LEGENDS (INDIA. SHRIRAMPUR LEGENDS TROPHY)
 https://e2-22.n4154.xyz/36569099.m3u8
-#EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",MAJESTIC STRIKERS vs TITAN TORNADOS (INDIA DIAMOND CUP T10)
-https://e2-22.n4154.xyz/36569123.m3u8
 #EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",ROYAL MEDICAL vs KUMAR TOWN (INDIA. BPL)
 https://e1-22.n4154.xyz/36569291.m3u8
-#EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",BESTBALLERS vs CRICKMASTERS (INDIA. INDOOR SERIES)
-https://e2-22.n4154.xyz/36569359.m3u8
 #EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",HUSTLERS vs KOHLAPUR KINGS (AKLUJ RURAL CHAMPIONSHIP)
 https://e2-22.n4154.xyz/36569373.m3u8
 #EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",CATCHERS vs WILD CATS (CHENNAI DAILY CRICKET)
 https://e3-22.n4154.xyz/36569375.m3u8
-#EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",YODHA PREMIER LEAGUE vs  (ECRICKET)
-https://e2-22.n4154.xyz/36569391.m3u8
 #EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",ALMORA CRICKET vs GAMDEVI CC (CHANDIGARH LEAGUE)
 https://e3-22.n4154.xyz/36569393.m3u8
-#EXTINF:-1 tvg-id="Darts.Dummy.us" tvg-name="DARTS" tvg-logo="https://images.alphacoders.com/520/520864.jpg" tvg-type="2" group-title="DARTS",SCOTT CAMPBELL vs PATRIK WILLIAMS (MODUS SUPER SERIES WEEK 3)
-https://e1-22.n4154.xyz/36569477.m3u8
-#EXTINF:-1 tvg-id="Racing.Dummy.us" tvg-name="HORSE RACING" tvg-logo="https://medya-cdn.tjk.org/haberftp/2022/ayyd12082022.jpg" tvg-type="2" group-title="HORSE RACING",KAWASAKI (JAPAN. KAWASAKI)
-https://e4-22.n4154.xyz/36569513.m3u8
+#EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",RUHUNA CRICKET vs TOP GUNS INDOOR (INDIA. INDOOR SERIES)
+https://e1-22.n4154.xyz/36569715.m3u8
+#EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",RHINOS CHENNAI vs CHENNAI LIONS (CHENNAI DAILY CRICKET)
+https://e4-22.n4154.xyz/36569725.m3u8
+#EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",PANCHVATI WARRIORS vs THE SMASHERS (INDIA. THE SMASHERS PROFESSIONAL CUP)
+https://e2-22.n4154.xyz/36569807.m3u8
+#EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",MAILSI TITANS vs RAWALPINDI UNITED (GUJRAT DISTRICT CUP)
+https://e3-22.n4154.xyz/36569821.m3u8
+#EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",ASRAR XI vs MK DEVELOPERS (INDIA. LOKMAT APL)
+https://e2-22.n4154.xyz/36569933.m3u8
+#EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",SWAT SWABI vs RAJANPUR SARDARS (KARACHI CHALLENGE CUP)
+https://e2-22.n4154.xyz/36570005.m3u8
+#EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",TUSKERS JAMMU vs DEXTEROUS (INDIA. INDOOR SERIES)
+https://e4-22.n4154.xyz/36570069.m3u8
+#EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",NAYTS vs ZM KK (NAYTS - ZM KK)
+https://e2-22.n4154.xyz/36570077.m3u8
+#EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",VIDYASAGAR CRICKET ACADEMY vs RADHA MADHAV CRICKET CLUB (AGRA DISTICT WOMENS LEAGUE)
+https://e3-22.n4154.xyz/36570079.m3u8
+#EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-name="CRICKET" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" tvg-type="2" group-title="CRICKET",YODHA PREMIER LEAGUE vs  (ECRICKET)
+https://e2-22.n4154.xyz/36570123.m3u8
+#EXTINF:-1 tvg-id="Darts.Dummy.us" tvg-name="DARTS" tvg-logo="https://images.alphacoders.com/520/520864.jpg" tvg-type="2" group-title="DARTS",PATRIK WILLIAMS vs ARCHIE SELF (MODUS SUPER SERIES WEEK 3)
+https://e4-22.n4154.xyz/36570127.m3u8
+#EXTINF:-1 tvg-id="Racing.Dummy.us" tvg-name="HORSE RACING" tvg-logo="https://medya-cdn.tjk.org/haberftp/2022/ayyd12082022.jpg" tvg-type="2" group-title="HORSE RACING",KAWASAKI (JAPAN)
+https://e4-22.n4154.xyz/36569991.m3u8
+#EXTINF:-1 tvg-id="Racing.Dummy.us" tvg-name="HORSE RACING" tvg-logo="https://medya-cdn.tjk.org/haberftp/2022/ayyd12082022.jpg" tvg-type="2" group-title="HORSE RACING",KENILWORTH (SOUTH AFRICA)
+https://e1-22.n4154.xyz/36570021.m3u8
