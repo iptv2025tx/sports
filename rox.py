@@ -5,7 +5,7 @@ from urllib.parse import urljoin, urlparse
 from requests.exceptions import RequestException
 import logging
 
-BASE_URL = "https://roxiestreams.live"
+BASE_URL = "https://roxiestreams.info"
 EPG_URL = "https://epgshare01.online/epgshare01/epg_ripper_DUMMY_CHANNELS.xml.gz"
 
 # Enhanced Mapping: (EPG_ID, Logo_URL, Group_Name)
