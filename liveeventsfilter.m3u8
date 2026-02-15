@@ -109,16 +109,6 @@ https://pl8.astroignite.space/playlist/45211/load-playlist
 #EXTVLCOPT:http-origin=https://pixelsport.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://cdn-live-tv.ru/api/v1/channels/nz-sky-sport-6/playlist.m3u8
-#EXTINF:-1 tvg-chno="90" tvg-id="Live.Event.us" tvg-name="[NRL] Cronulla Sharks vs Parramatta Eels (FAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NRL] Cronulla Sharks vs Parramatta Eels (FAWA)
-#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
-#EXTVLCOPT:http-origin=http://www.fawanews.sc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-http://205.237.105.46/hls/kyyyqQQQQQQQ.m3u8
-#EXTINF:-1 tvg-chno="91" tvg-id="Live.Event.us" tvg-name="[NRL] NRL All Stars (FAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NRL] NRL All Stars (FAWA)
-#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
-#EXTVLCOPT:http-origin=http://www.fawanews.sc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-http://205.237.105.46/hls/kyyyqQQQQQQQ.m3u8
 #EXTINF:-1 tvg-chno="95" tvg-id="Live.Event.us" tvg-name="[Olympic] Olympic Winter Games Milano Cortina 2026 (iSTRMEAST)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Olympic] Olympic Winter Games Milano Cortina 2026 (iSTRMEAST)
 #EXTVLCOPT:http-referrer=https://gooz.aapmains.net
 #EXTVLCOPT:http-origin=https://gooz.aapmains.net
