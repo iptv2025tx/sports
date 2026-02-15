@@ -34,6 +34,11 @@ https://play.streameast.asia/playlist/stream_9.m3u8?md5=erUokMpWgOO0FfSmEGdPgQ&e
 #EXTVLCOPT:http-origin=https://streambtw.live/iframe/ch9.php
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://play.streameast.asia/playlist/stream_9.m3u8?md5=erUokMpWgOO0FfSmEGdPgQ&expires=1771192832
+#EXTINF:-1 tvg-chno="31" tvg-id="Live.Event.us" tvg-name="[Chile Liga de Primera] Nublense vs Audax Italiano (FAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Chile Liga de Primera] Nublense vs Audax Italiano (FAWA)
+#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
+#EXTVLCOPT:http-origin=http://www.fawanews.sc/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+http://195.178.110.25/hls/CCCCC.m3u8
 #EXTINF:-1 tvg-chno="33" tvg-id="Soccer.Dummy.us" tvg-name="[Colombia Primera A] Aguilas vs Bucaramanga (FAWA)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1543.png" group-title="Live Events",[Colombia Primera A] Aguilas vs Bucaramanga (FAWA)
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-origin=http://www.fawanews.sc/
@@ -94,11 +99,6 @@ https://edge2caster.pro/hls/dza5z8f69.m3u8?st=WqUHfUrESHPPMpOdxjB2muUTUuYRidc2CE
 #EXTVLCOPT:http-origin=https://streamcenter.xyz
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://edge2caster.pro/hls/377qj1h2727.m3u8?st=X7wClK2x_skZPRRuLN4roniXk8Adzgz8CmlmoxcV2CI&e=1771197708
-#EXTINF:-1 tvg-chno="66" tvg-id="Soccer.Dummy.us" tvg-name="[France Ligue 1] Olympique Lyonnais vs Nice (SPORT9)" tvg-logo="https://ligue1.com/images/Logo_Ligue_1.webp" group-title="Live Events",[France Ligue 1] Olympique Lyonnais vs Nice (SPORT9)
-#EXTVLCOPT:http-referrer=https://vividmosaica.com/
-#EXTVLCOPT:http-origin=https://vividmosaica.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://n10.sanwalyaarpya.com:1686/hls/do39.m3u8?md5=Xhh1UapWyr8R3ptC8L4Zwg&expires=1771194311
 #EXTINF:-1 tvg-chno="68" tvg-id="Soccer.Dummy.us" tvg-name="[French Ligue 1] Nice vs Lyon (STRMHUB)" tvg-logo="https://livesports4u.net/uploads/categories/1756217350_9.png" group-title="Live Events",[French Ligue 1] Nice vs Lyon (STRMHUB)
 #EXTVLCOPT:http-referrer=https://storytrench.net/
 #EXTVLCOPT:http-origin=https://storytrench.net/
@@ -564,11 +564,6 @@ https://d3nz0tuaqq669f.cloudfront.net/status/4/fronts.woff2?965c5b
 #EXTVLCOPT:http-origin=https://vividmosaica.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://n11.sanwalyaarpya.com:1686/hls/do6.m3u8?md5=YDWBi327ly1-mLcxYDz4nA&expires=1771194327
-#EXTINF:-1 tvg-chno="237" tvg-id="Soccer.Dummy.us" tvg-name="[Spain Segunda Division] CD Castellon vs Deportivo La Coruna (SPORT9)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/107.png" group-title="Live Events",[Spain Segunda Division] CD Castellon vs Deportivo La Coruna (SPORT9)
-#EXTVLCOPT:http-referrer=https://vividmosaica.com/
-#EXTVLCOPT:http-origin=https://vividmosaica.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://n14.sanwalyaarpya.com:1686/hls/do26.m3u8?md5=_9xvJjeOe-bxeGou_yR1Ow&expires=1771194335
 #EXTINF:-1 tvg-chno="240" tvg-id="Soccer.Dummy.us" tvg-name="[Spanish LALIGA] Real Betis vs Mallorca (STRMHUB)" tvg-logo="https://livesports4u.net/uploads/categories/1756216923_15.png" group-title="Live Events",[Spanish LALIGA] Real Betis vs Mallorca (STRMHUB)
 #EXTVLCOPT:http-referrer=https://storytrench.net/
 #EXTVLCOPT:http-origin=https://storytrench.net/
